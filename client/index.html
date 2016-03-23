@@ -1,13 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en" ng-app="teleportation">
 <head>
-  <link rel="stylesheet" type="text/css" href=""/>
-  <script type="text/javascript" src=""></script>
+    
+    <!-- Jquery -->
+    <script type="text/javascript" src="lib/jquery/jquery-1.12.2.js"></script>
+    
+    <!-- Lodash -->
+    <script type="text/javascript" src="lib/lodash/lodash.js"></script>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.6/css/bootstrap.min.css"/>
+    <!--link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.6/css/bootstrap-theme.css"/-->
+    <script type="text/javascript" src="lib/bootstrap-3.3.6/js/bootstrap.js"></script>
+    
+    <!-- Bootstrap Material Design -->
+    <!--link rel="stylesheet" type="text/css" href="lib/bootstrap-material-design/css/bootstrap-material-design.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-material-design/css/ripples.min.css"/>
+    <script type="text/javascript" src="lib/bootstrap-material-design/js/material.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-material-design/js/ripples.js"></script-->
+    
+    <!-- Google's Material Design Icons -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/material-design-icons/iconfont/material-icons.css"/>
+    
+    <!-- Templarian's Material Design Icons -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/mdi/css/materialdesignicons.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/materialdesignicon.bootstrap.css"/>
+    
+    <!-- Angular -->
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    
+    <!-- Local style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    
+    <!-- Angular application module -->
+    <script type="text/javascript" src="app/app.module.js"></script>
 </head>
 
-<body ng-controller="AppCtrl">
-  <div ng-include="'header.tpl.html'"></div>
-  <div ng-include="'notifications.tpl.html'" class="container-fluid" ng-show="notifications.getCurrent().length"></div>
-  <div ng-view class="container-fluid"></div>
+<body>
+    <i class="mdi mdi-bell"></i>
+    <i class="material-icons">face</i>
+    <div class="btn-toolbar" role="toolbar">
+   <button type="button" class="btn btn-lg btn-default">
+                        <i class="mdi mdi-account"></i>
+                    </button>
+</div>
 </body>
 </html>
