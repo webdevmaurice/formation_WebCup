@@ -1,0 +1,19 @@
+<nav id="bt-menu" class="bt-menu" ng-controller='navCtrl'>
+    <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+    <ul>
+        <li>
+            <a href="#" class="bt-icon icon-zoom">
+                <ng-md-icon 
+                    icon="{{clickIcon}}" 
+                    size="50"
+                    options='{"duration": 375, "rotation": "none"}'
+                    ng-click="clickIconMorph()">
+                </ng-md-icon> 
+            </a>
+        </li>
+        <li><a href="#" class="bt-icon icon-refresh"></a></li>
+        <li><a href="#" class="bt-icon icon-lock"></a></li>
+        <li><a href="#" class="bt-icon icon-speaker"></a></li>
+        <li><a href="#" class="bt-icon icon-star"></a></li>
+    </ul>
+</nav>

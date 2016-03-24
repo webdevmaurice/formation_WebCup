@@ -1,1 +1,1 @@
-angular.module('teleportation',['ngMaterial']);
+angular.module('teleportation',['ngMaterial','ngMdIcons']);
