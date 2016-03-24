@@ -1,1 +1,1 @@
-angular.module('teleportation',[]);
+angular.module('teleportation',['ngMaterial']);
