@@ -47,7 +47,10 @@
     <!-- Angular Material Icons-->
     <script type="text/javascript" src="client/lib/angular-material-icons/angular-material-icons.js"></script>
     <link rel="stylesheet" type="text/css" href="client/lib/angular-material-icons/angular-material-icons.css"/>
-    
+
+    <!-- Angular Translate-->
+    <script type="text/javascript" src="client/lib/angular-translate/dist/angular-translate.js"></script>
+
     <!-- SVG Morpheus -->
     <script type="text/javascript" src="client/lib/SVG-Morpheus/compile/unminified/svg-morpheus.js"></script>
     
@@ -67,12 +70,12 @@
     <div class="container">
         <!--ng-include src="'app/shared_component/nav/nav.html'"></ng-include-->
     </div>
-    <ng-md-icon 
+    <!--ng-md-icon
         icon="{{clickIcon}}" 
         size="100"
         options='{"duration": 375, "rotation": "none"}'
         ng-click="clickIconMorph()">
-    </ng-md-icon> 
+    </ng-md-icon-->
     <!--ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"duration": 375}'></ng-md-icon-->
     <script>
         angular.module('teleportation')

@@ -8,7 +8,42 @@
             <set />
           </value>
         </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.regexp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../officentral/flex/commande/services/gethdcfa.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../officentral/flex/commande/services/insertingprod.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../officentral/flex/commande/services/insertingprodplus.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../officentral/flex/commande/services/savedatelivr.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../officentral/lang/fr.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/client/app/app.module.js">
           <value>
             <set />
           </value>
@@ -19,6 +54,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="db-console:/89ae6de9/0f72b5a6-bec7-42b6-b37b-7d6e0b15c3ba/">
           <value>
             <set />
           </value>
