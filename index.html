@@ -7,7 +7,11 @@
     
     <!-- Lodash -->
     <script type="text/javascript" src="client/lib/lodash/lodash.js"></script>
-    
+
+    <!-- Canvasjs -->
+    <!--script type="text/javascript" src="client/lib/canvasjs/jquery.canvasjs.min.js"></script>
+    <script type="text/javascript" src="client/lib/canvasjs/canvasjs.min.js"></script-->
+
     <!-- Bootstrap -->
     <!--link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.6/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.6/css/bootstrap-theme.css"/>
@@ -39,8 +43,11 @@
     <script type="text/javascript" src="client/lib/angular-messages/angular-messages.js"></script>
     
     <!-- Angular Route-->
-    <script type="text/javascript" src="client/lib/angular-route/angular-route.js"></script>
-    
+    <!-- script type="text/javascript" src="client/lib/angular-route/angular-route.js"></script-->
+
+    <!-- UI Router-->
+    <script type="text/javascript" src="client/lib/ui-router/release/angular-ui-router.js"></script>
+
     <!-- Angular Material-->
     <script type="text/javascript" src="client/lib/angular-material/angular-material.js"></script>
     
@@ -59,16 +66,20 @@
     
     <!-- Angular application module -->
     <script type="text/javascript" src="client/app/app.module.js"></script>
-    
+
+    <!-- Angular application routing -->
+    <script type="text/javascript" src="client/app/app.routes.js"></script>
+
     <!-- Navigation -->
     <link rel="stylesheet" type="text/css" href="client/app/shared_component/nav/nav.css"/>
     <script type="text/javascript" src="client/app/shared_component/nav/navCtrl.js"></script>
-    
+
 </head>
 
-<body ng-controller='demo'>
+<body>
     <div class="container">
         <!--ng-include src="'app/shared_component/nav/nav.html'"></ng-include-->
+        <div ng-view></div>
     </div>
     <!--ng-md-icon
         icon="{{clickIcon}}" 
@@ -77,7 +88,7 @@
         ng-click="clickIconMorph()">
     </ng-md-icon-->
     <!--ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"duration": 375}'></ng-md-icon-->
-    <script>
+    <!--script>
         angular.module('teleportation')
             .controller('demo',['$scope',function demoCtrl ($scope) {
                 $scope.fill = 'lightgreen';
@@ -92,6 +103,6 @@
                     }
                 };
             }]);
-    </script>
+    </script-->
 </body>
 </html>

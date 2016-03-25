@@ -48,6 +48,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/client/app/app.routes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/client/app/main_component/my_account/MyAccountCtrl.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/client/app/main_component/my_account/my_account.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/client/app/main_component/my_account/statistique/statistique.html">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/client/index.html">
           <value>
             <set />
