@@ -1,2 +1,2 @@
-angular.module('teleportation',['ngMaterial','ngMdIcons']);
+angular.module('teleportation',['ngMaterial','ngMdIcons','pascalprecht.translate']);
 //Micheal l
