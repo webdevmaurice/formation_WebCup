@@ -66,8 +66,9 @@
     <!-- SVG Morpheus -->
     <script type="text/javascript" src="client/lib/SVG-Morpheus/compile/unminified/svg-morpheus.js"></script>
     
-    <!-- Local style -->
+    <!-- Local styles -->
     <link rel="stylesheet" type="text/css" href="client/assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="client/assets/css/page_cube_transitions.css"/>
     
     <!-- Angular application module -->
     <script type="text/javascript" src="client/app/app.module.js"></script>
@@ -76,8 +77,8 @@
     <script type="text/javascript" src="client/app/app.routes.js"></script>
 
     <!-- Navigation -->
-    <!-- link rel="stylesheet" type="text/css" href="client/app/shared_component/nav/nav.css"/>
-    <script type="text/javascript" src="client/app/shared_component/nav/navCtrl.js"></script-->
+    <!-- link rel="stylesheet" type="text/css" href="client/app/shared_component/nav/nav.css"/-->
+    <script type="text/javascript" src="client/app/shared_component/nav/navCtrl.js"></script>
     
     <!-- My Account -->
     <script type="text/javascript" src="client/app/main_component/page_acceuil/PageAcceuilCtrl,js"></script>
@@ -88,27 +89,12 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- ng-include src="'app/shared_component/nav/nav.html'"></ng-include -->
-        <ul>
-            <li>
-                <a href="#" class="bt-icon icon-zoom">Page d'acceuil</a>
-            </li>
-            <li>
-                <a href="#/my_account" class="bt-icon icon-zoom">My account</a>
-            </li>
-            <li>
-                <a href="#/voyage" class="bt-icon icon-zoom">Map</a>
-            </li>
-            <li>
-                <a href="#/map" class="bt-icon icon-zoom">Voyage</a>
-            </li>
-            <li>
-                <a href="#/about" class="bt-icon icon-zoom">About</a>
-            </li>
-        </ul>
-        <div ng-view></div>
-    </div>
+    <!-- div class="container" -->
+        <ng-include src="'client/app/shared_component/nav/nav.html'"></ng-include>
+        <div  class="pt-perspective">
+            <div ng-view></div>
+        </div>
+    <!--/div-->
     <!-- ng-md-icon
         icon="{{clickIcon}}" 
         size="100"
