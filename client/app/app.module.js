@@ -1,2 +1,1 @@
-angular.module('teleportation',['ngMaterial','ngMdIcons','pascalprecht.translate','ui.router']);
-//Micheal l
+angular.module('teleportation',['ngMaterial','ngMdIcons','pascalprecht.translate','ngRoute','chart.js']);

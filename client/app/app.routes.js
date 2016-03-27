@@ -14,5 +14,5 @@ angular.module('teleportation')
             })
             /*.when('/voyage')
             .when('/map')*/
-            .otherwise({redirectTo: '/my_account'});
+            .otherwise({redirectTo: '/page_acceuil'});
     }]);

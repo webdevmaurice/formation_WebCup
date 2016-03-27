@@ -9,8 +9,8 @@
     <script type="text/javascript" src="client/lib/lodash/lodash.js"></script>
 
     <!-- Canvasjs -->
-    <!--script type="text/javascript" src="client/lib/canvasjs/jquery.canvasjs.min.js"></script>
-    <script type="text/javascript" src="client/lib/canvasjs/canvasjs.min.js"></script-->
+    <script type="text/javascript" src="client/lib/canvasjs/jquery.canvasjs.min.js"></script>
+    <script type="text/javascript" src="client/lib/canvasjs/canvasjs.min.js"></script>
 
     <!-- Bootstrap -->
     <!--link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.6/css/bootstrap.min.css"/>
@@ -43,10 +43,10 @@
     <script type="text/javascript" src="client/lib/angular-messages/angular-messages.js"></script>
     
     <!-- Angular Route-->
-    <!-- script type="text/javascript" src="client/lib/angular-route/angular-route.js"></script-->
+    <script type="text/javascript" src="client/lib/angular-route/angular-route.js"></script>
 
     <!-- UI Router-->
-    <script type="text/javascript" src="client/lib/ui-router/release/angular-ui-router.js"></script>
+    <!--script type="text/javascript" src="client/lib/ui-router/release/angular-ui-router.js"></script-->
 
     <!-- Angular Material-->
     <script type="text/javascript" src="client/lib/angular-material/angular-material.js"></script>
@@ -58,6 +58,11 @@
     <!-- Angular Translate-->
     <script type="text/javascript" src="client/lib/angular-translate/dist/angular-translate.js"></script>
 
+    <!-- Angular Chart -->
+    <script type="text/javascript" src="client/lib/chart.js/Chart.js"></script>
+    <script type="text/javascript" src="client/lib/angular-chart.js/dist/angular-chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="client/lib/angular-chart.js/dist/angular-chart.css"/>
+    
     <!-- SVG Morpheus -->
     <script type="text/javascript" src="client/lib/SVG-Morpheus/compile/unminified/svg-morpheus.js"></script>
     
@@ -71,24 +76,47 @@
     <script type="text/javascript" src="client/app/app.routes.js"></script>
 
     <!-- Navigation -->
-    <link rel="stylesheet" type="text/css" href="client/app/shared_component/nav/nav.css"/>
-    <script type="text/javascript" src="client/app/shared_component/nav/navCtrl.js"></script>
-
+    <!-- link rel="stylesheet" type="text/css" href="client/app/shared_component/nav/nav.css"/>
+    <script type="text/javascript" src="client/app/shared_component/nav/navCtrl.js"></script-->
+    
+    <!-- My Account -->
+    <script type="text/javascript" src="client/app/main_component/page_acceuil/PageAcceuilCtrl,js"></script>
+    
+    <!-- My Account -->
+    <script type="text/javascript" src="client/app/main_component/my_account/MyAccountCtrl.js"></script>
+    <!-- script type="text/javascript" src="client/app/main_component/my_account/statistique/statistique.js"></script -->
 </head>
 
 <body>
     <div class="container">
-        <!--ng-include src="'app/shared_component/nav/nav.html'"></ng-include-->
+        <!-- ng-include src="'app/shared_component/nav/nav.html'"></ng-include -->
+        <ul>
+            <li>
+                <a href="#" class="bt-icon icon-zoom">Page d'acceuil</a>
+            </li>
+            <li>
+                <a href="#/my_account" class="bt-icon icon-zoom">My account</a>
+            </li>
+            <li>
+                <a href="#/voyage" class="bt-icon icon-zoom">Map</a>
+            </li>
+            <li>
+                <a href="#/map" class="bt-icon icon-zoom">Voyage</a>
+            </li>
+            <li>
+                <a href="#/about" class="bt-icon icon-zoom">About</a>
+            </li>
+        </ul>
         <div ng-view></div>
     </div>
-    <!--ng-md-icon
+    <!-- ng-md-icon
         icon="{{clickIcon}}" 
         size="100"
         options='{"duration": 375, "rotation": "none"}'
         ng-click="clickIconMorph()">
-    </ng-md-icon-->
-    <!--ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"duration": 375}'></ng-md-icon-->
-    <!--script>
+    </ng-md-icon -->
+    <!-- ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"duration": 375}'></ng-md-icon -->
+    <!-- script>
         angular.module('teleportation')
             .controller('demo',['$scope',function demoCtrl ($scope) {
                 $scope.fill = 'lightgreen';
@@ -103,6 +131,6 @@
                     }
                 };
             }]);
-    </script-->
+    </script -->
 </body>
 </html>
