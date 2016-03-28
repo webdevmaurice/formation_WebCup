@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="teleportation">
 <head>
-    
+
     <!-- Jquery -->
     <script type="text/javascript" src="client/lib/jquery/jquery-1.12.2.js"></script>
-    
+
     <!-- Lodash -->
     <script type="text/javascript" src="client/lib/lodash/lodash.js"></script>
 
@@ -22,32 +22,32 @@
     <!--link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.6/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.6/css/bootstrap-theme.css"/>
     <script type="text/javascript" src="lib/bootstrap-3.3.6/js/bootstrap.js"></script-->
-    
+
     <!-- Bootstrap Material Design -->
     <!--link rel="stylesheet" type="text/css" href="lib/bootstrap-material-design/css/bootstrap-material-design.min.css"/>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap-material-design/css/ripples.min.css"/>
     <script type="text/javascript" src="lib/bootstrap-material-design/js/material.js"></script>
     <script type="text/javascript" src="lib/bootstrap-material-design/js/ripples.js"></script-->
-    
+
     <!-- Google's Material Design Icons -->
     <link rel="stylesheet" type="text/css" href="client/assets/vendor/material-design-icons/iconfont/material-icons.css"/>
-    
+
     <!-- Templarian's Material Design Icons -->
     <!--link rel="stylesheet" type="text/css" href="assets/vendor/mdi/css/materialdesignicons.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/materialdesignicon.bootstrap.css"/-->
-    
+
     <!-- Angular -->
     <script type="text/javascript" src="client/lib/angular/angular.js"></script>
-    
+
     <!-- Angular Animate-->
     <script type="text/javascript" src="client/lib/angular-animate/angular-animate.js"></script>
-    
+
     <!-- Angular Aria-->
     <script type="text/javascript" src="client/lib/angular-aria/angular-aria.js"></script>
-    
+
     <!-- Angular Messages-->
     <script type="text/javascript" src="client/lib/angular-messages/angular-messages.js"></script>
-    
+
     <!-- Angular Route-->
     <script type="text/javascript" src="client/lib/angular-route/angular-route.js"></script>
 
@@ -56,7 +56,8 @@
 
     <!-- Angular Material-->
     <script type="text/javascript" src="client/lib/angular-material/angular-material.js"></script>
-    
+    <link rel="stylesheet" type="text/css" href="client/lib/angular-material/angular-material.css"/>
+
     <!-- Angular Material Icons-->
     <script type="text/javascript" src="client/lib/angular-material-icons/angular-material-icons.js"></script>
     <link rel="stylesheet" type="text/css" href="client/lib/angular-material-icons/angular-material-icons.css"/>
@@ -68,10 +69,10 @@
     <script type="text/javascript" src="client/lib/chart.js/Chart.js"></script>
     <script type="text/javascript" src="client/lib/angular-chart.js/dist/angular-chart.js"></script>
     <link rel="stylesheet" type="text/css" href="client/lib/angular-chart.js/dist/angular-chart.css"/>
-    
+
     <!-- SVG Morpheus -->
     <script type="text/javascript" src="client/lib/SVG-Morpheus/compile/unminified/svg-morpheus.js"></script>
-    
+
     <!-- Local styles -->
     <link rel="stylesheet" type="text/css" href="client/assets/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="client/assets/css/page_cube_transitions.css"/>
@@ -88,10 +89,10 @@
     <!-- Navigation -->
     <!-- link rel="stylesheet" type="text/css" href="client/app/shared_component/nav/nav.css"/-->
     <script type="text/javascript" src="client/app/shared_component/nav/navCtrl.js"></script>
-    
+
     <!-- Page Acceuil -->
     <script type="text/javascript" src="client/app/main_component/page_acceuil/PageAcceuilCtrl,js"></script>
-    
+
     <!-- My Account -->
     <script type="text/javascript" src="client/app/main_component/my_account/MyAccountCtrl.js"></script>
     <!-- script type="text/javascript" src="client/app/main_component/my_account/statistique/statistique.js"></script -->
@@ -106,14 +107,15 @@
 </head>
 
 <body>
+    <md-progress-circular md-mode="indeterminate" md-diameter="150" ng-show="isRouteLoading"></md-progress-circular>
     <!-- div class="container" -->
         <ng-include src="'client/app/shared_component/nav/nav.html'"></ng-include>
-        <div  class="pt-perspective">
-            <div ng-view></div>
+        <div  class="animation">
+            <div ng-view class="cube pt-page-1"></div>
         </div>
     <!--/div-->
     <!-- ng-md-icon
-        icon="{{clickIcon}}" 
+        icon="{{clickIcon}}"
         size="100"
         options='{"duration": 375, "rotation": "none"}'
         ng-click="clickIconMorph()">
