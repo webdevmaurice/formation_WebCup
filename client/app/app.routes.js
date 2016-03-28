@@ -12,7 +12,9 @@ angular.module('teleportation')
                 controller: 'MyAccountCtrl',
                 controllerAs: 'vm'
             })
-            /*.when('/voyage')
-            .when('/map')*/
+            .when('/voyage', {
+                templateUrl: baseUrl + 'voyage/voyage.html'
+            })
+            /*.when('/map')*/
             .otherwise({redirectTo: '/page_acceuil'});
     }]);
