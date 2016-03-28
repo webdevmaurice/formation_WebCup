@@ -1,9 +1,5 @@
 /* CSS reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
-	margin:0;
-	padding:0;
-}
-html,body {
+#divVoyage.body,#divVoyage.div,#divVoyage.dl,#divVoyage.dt,#divVoyage.dd,#divVoyage.ul,#divVoyage.ol,#divVoyage.li,#divVoyage.h1,#divVoyage.h2,#divVoyage.h3,#divVoyage.h4,#divVoyage.h5,#divVoyage.h6,#divVoyage.pre,#divVoyage.form,#divVoyage.fieldset,#divVoyage.input,#divVoyage.textarea,#divVoyage.p,#divVoyage.blockquote,#divVoyage.th,#divVoyage.td {
 	margin:0;
 	padding:0;
 }
@@ -11,26 +7,26 @@ table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
-fieldset,img { 
+#divVoyage.fieldset,#divVoyage.img {
 	border:0;
 }
-input{
+#divVoyage.input{
 	border:1px solid #b0b0b0;
 	padding:3px 5px 4px;
 	color:#979797;
 	width:190px;
 }
-address,caption,cite,code,dfn,th,var {
+#divVoyage.address,#divVoyage.caption,#divVoyage.cite,#divVoyage.code,#divVoyage.dfn,#divVoyage.th,#divVoyage.var {
 	font-style:normal;
 	font-weight:normal;
 }
-ol,ul {
+#divVoyage.ol,#divVoyage.ul {
 	list-style:none;
 }
-caption,th {
+#divVoyage.caption,#divVoyage.th {
 	text-align:left;
 }
-h1,h2,h3,h4,h5,h6 {
+#divVoyage.h1,#divVoyage.h2,#divVoyage.h3,#divVoyage.h4,#divVoyage.h5,#divVoyage.h6 {
 	font-size:100%;
 	font-weight:normal;
 }
