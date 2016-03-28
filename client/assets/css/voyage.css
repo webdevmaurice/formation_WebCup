@@ -1,7 +1,13 @@
 @import url('reset.css');
 
 /* General Demo Style */
-body{
+#ss-container{
+    background: #f7f7f7 url(../img/voyage/old_wall.jpg) repeat top left;
+    color: rgba(0,0,0,0.8);
+    font-family: 'Kelly Slab','Myriad Pro', Arial, sans-serif;
+    font-size: 15px;
+}
+#divVoyage{
     background: #f7f7f7 url(../img/voyage/old_wall.jpg) repeat top left;
     color: rgba(0,0,0,0.8);
     font-family: 'Kelly Slab','Myriad Pro', Arial, sans-serif;
