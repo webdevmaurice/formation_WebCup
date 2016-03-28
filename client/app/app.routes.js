@@ -13,7 +13,9 @@ angular.module('teleportation')
                 controllerAs: 'vm'
             })
             .when('/voyage', {
-                templateUrl: baseUrl + 'voyage/voyage.html'
+                templateUrl: baseUrl + 'voyage/voyage.html',
+                controller: 'VoyageCtrl',
+                controllerAs: 'vm'
             })
             /*.when('/map')*/
             .otherwise({redirectTo: '/page_acceuil'});
