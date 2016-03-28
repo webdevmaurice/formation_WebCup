@@ -36,7 +36,7 @@ h2.ss-subtitle:after{
     width: 100%;
     z-index: 100;
 }
-.ss-links a{
+.ss-links #divVoyage.a{
     background: rgba(0,0,0,0.2);
     font-size: 16px;
     width: 100px;
@@ -53,7 +53,7 @@ h2.ss-subtitle:after{
     -ms-transition: background 0.2s linear;
     transition: background 0.2s linear;
 }
-.ss-links a:hover{
+.ss-links #divVoyage.a:hover{
     background: rgba(0,0,0,0.4);
 }
 .ss-container{
@@ -64,7 +64,7 @@ h2.ss-subtitle:after{
     overflow: hidden;
     padding-bottom: 500px;
 }
-.ss-container h2{
+.ss-container #divVoyage.h2{
     font-size: 40px;
     text-transform: uppercase;
     color: rgba(78,84,123,0.2);
