@@ -1,5 +1,7 @@
 angular.module('teleportation')
     .controller('PageAcceuilCtrl',[function MyAccountCtrl () {
+        console.log("PageAcceuilCtrl");
         var vm = this;
+        vm.pageClass = "page-acceuil";
     }]);
     

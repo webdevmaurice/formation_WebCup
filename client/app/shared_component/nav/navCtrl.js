@@ -8,42 +8,38 @@ angular.module('teleportation')
         return check;
     }
 
-    function init() {
-
-        var menu = $('#bt-menu'),
-            trigger = menu.find('a.bt-menu-trigger'),
-            // event type (if mobile, use touch events)
-            eventtype = mobilecheck() ? 'touchstart' : 'click',
-            resetMenu = function() {
-                menu.removeClass('bt-menu-open');
-                menu.addClass('bt-menu-close');
-            },
-            closeClickFn = function( ev ) {
-                resetMenu();
-                overlay.removeEventListener( eventtype, closeClickFn );
-            };
-
-        var overlay = document.createElement('div');
-        overlay.className = 'bt-overlay';
-        menu.append( overlay );
-
-        trigger.bind( eventtype, function( ev ) {
-            console.log(ev)
-            ev.stopPropagation();
-            ev.preventDefault();
-            
-            if( menu.hasClass( 'bt-menu-open' ) ) {
-                resetMenu();
-            }
-            else {
-                menu.removeClass('bt-menu-close');
-                menu.addClass('bt-menu-open');
-                overlay.addEventListener( eventtype, closeClickFn );
-            }
-        });
-
-    }
-    init();
+    var menu = $('#bt-menu'),
+        trigger = menu.find('a.bt-menu-trigger'),
+        // event type (if mobile, use touch events)
+        eventtype = mobilecheck() ? 'touchstart' : 'click',
+        resetMenu = function() {
+            menu.removeClass('bt-menu-open');
+            menu.addClass('bt-menu-close');
+        },
+        closeClickFn = function( ev ) {
+            resetMenu();
+            overlay.removeEventListener( eventtype, closeClickFn );
+            if(!$scope.$$phase) $scope.$apply();
+        };
+    
+    var overlay = document.createElement('div');
+    overlay.className = 'bt-overlay';
+    menu.append( overlay );
+    
+    trigger.bind( eventtype, function( ev ) {
+        ev.stopPropagation();
+        ev.preventDefault();
+        
+        if( menu.hasClass( 'bt-menu-open' ) ) {
+            resetMenu();
+        }
+        else {
+            menu.removeClass('bt-menu-close');
+            menu.addClass('bt-menu-open');
+            overlay.addEventListener( eventtype, closeClickFn );
+        }
+        if(!$scope.$$phase) $scope.$apply();
+    });
 
     }]);
 //Push from aptana

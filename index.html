@@ -85,6 +85,7 @@
 
     <!-- Directives -->
     <script type="text/javascript" src="client/app/common/directives/scrollToItem.js"></script>
+    <script type="text/javascript" src="client/app/common/directives/bindToHeight.js"></script>
 
     <!-- Navigation -->
     <link rel="stylesheet" type="text/css" href="client/app/shared_component/nav/nav.css"/>
@@ -107,11 +108,18 @@
 </head>
 
 <body>
-    <md-progress-circular md-mode="indeterminate" md-diameter="150" ng-show="isRouteLoading"></md-progress-circular>
+    <md-progress-circular 
+        md-mode="indeterminate" 
+        md-diameter="150" 
+        ng-show="isRouteLoading">
+    </md-progress-circular>
     <!-- div class="container" -->
         <div  class="animation outer-box">
             <ng-include src="'client/app/shared_component/nav/nav.html'"></ng-include>
-            <div ng-view class="cube pt-page-1"></div>
+            <div ng-view 
+                class="cube pt-page-1 {{vm.pageClass}}"  
+                bind-to-height="['height','#bt-menu']">
+            </div>
         </div>
     <!--/div-->
     <!-- ng-md-icon
