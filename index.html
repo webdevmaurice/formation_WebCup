@@ -87,7 +87,7 @@
     <script type="text/javascript" src="client/app/common/directives/scrollToItem.js"></script>
 
     <!-- Navigation -->
-    <!-- link rel="stylesheet" type="text/css" href="client/app/shared_component/nav/nav.css"/-->
+    <link rel="stylesheet" type="text/css" href="client/app/shared_component/nav/nav.css"/>
     <script type="text/javascript" src="client/app/shared_component/nav/navCtrl.js"></script>
 
     <!-- Page Acceuil -->
@@ -109,8 +109,8 @@
 <body>
     <md-progress-circular md-mode="indeterminate" md-diameter="150" ng-show="isRouteLoading"></md-progress-circular>
     <!-- div class="container" -->
-        <ng-include src="'client/app/shared_component/nav/nav.html'"></ng-include>
-        <div  class="animation">
+        <div  class="animation outer-box">
+            <ng-include src="'client/app/shared_component/nav/nav.html'"></ng-include>
             <div ng-view class="cube pt-page-1"></div>
         </div>
     <!--/div-->
