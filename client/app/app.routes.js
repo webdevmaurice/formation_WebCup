@@ -4,7 +4,7 @@ angular.module('teleportation')
         $routeProvider
             .when('/page_acceuil',{
                 templateUrl: baseUrl + 'page_acceuil/page_acceuil.html',
-                controller: 'PageAcceuilCtrl',
+                controller: 'PageAccueilCtrl',
                 controllerAs: 'vm'
             })
             .when('/my_account',{
