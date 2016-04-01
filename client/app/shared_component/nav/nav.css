@@ -15,7 +15,6 @@ body  {
 }
 
 .bt-menu {
-    /*z-index: 5;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -38,15 +37,6 @@ body  {
     transition: border-width 0.3s, background-color 0.3s;
 }
 
-.bt-overlay {
-    position: absolute;
-    width: 100%;
-}
-
-.bt-menu-open .bt-overlay {
-    height: 100%;
-}
-
 .bt-menu-trigger {
     position: fixed;
     top: 10px;
@@ -58,56 +48,6 @@ body  {
     cursor: pointer;
 }
 
-.bt-menu-trigger span {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 8%;
-    background-color: #fff;
-    font-size: 0px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-}
-
-.bt-menu-trigger span:before,
-.bt-menu-trigger span:after {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    content: '';
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-}
-
-.bt-menu-trigger span:before {
-    -webkit-transform: translateY(-250%);
-    transform: translateY(-250%);
-}
-
-.bt-menu-trigger span:after {
-    -webkit-transform: translateY(250%);
-    transform: translateY(250%);
-}
-
-.bt-menu-open .bt-menu-trigger span:before {
-    -webkit-transform: translateY(-300%);
-    transform: translateY(-300%);
-}
-
-.bt-menu-open .bt-menu-trigger span:after {
-    -webkit-transform: translateY(300%);
-    transform: translateY(300%);
-}
 
 .bt-menu ul {
     position: fixed;
@@ -238,4 +178,17 @@ body  {
 .bt-menu ul li a:hover:before,
 .bt-menu ul li a:focus:before {
     color: #1abc9c;
+}
+
+ng-md-icon {
+    -webkit-transition: fill 750ms ease-in-out;
+    -moz-transition: fill 750ms ease-in-out;
+    -o-transition: fill 750ms ease-in-out;
+    transition: fill 750ms ease-in-out;
+}
+ng-md-icon > svg {
+    -webkit-transition: width 750ms ease-in-out, height 750ms ease-in-out;
+    -moz-transition: width 750ms ease-in-out, height 750ms ease-in-out;
+    -o-transition: width 750ms ease-in-out, height 750ms ease-in-out;
+    transition: width 750ms ease-in-out, height 750ms ease-in-out;
 }
