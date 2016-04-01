@@ -6,5 +6,7 @@
  * Time: 2:03 PM
  */
 
-include_once 'server/classes/bdd.class.php';
-include_once 'server/inc/init.php';
+//include_once '../inc/init.php';
+include_once '../classes/hub.class.php';
+
+echo json_encode(hub::getData('params'));
