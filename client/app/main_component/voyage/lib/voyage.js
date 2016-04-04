@@ -122,7 +122,6 @@ $(function() {
                     },
                     // when scrolling the page change the position of each row
                     'scroll.Scrolling' : function( event ) {
-                        console.log('ff');
                         // set a timeout to avoid that the
                         // placeRows function gets called on every scroll trigger
                         if( anim ) return false;
