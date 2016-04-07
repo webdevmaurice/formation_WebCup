@@ -9,6 +9,7 @@ angular.module('teleportation')
        $http.get('server/webservice/statistique.php')
            .then(function(config){
                console.log(config.data);
+
                vm.labels = config.data.labels;
                vm.data = config.data.data;
            })
