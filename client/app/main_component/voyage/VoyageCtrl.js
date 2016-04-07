@@ -27,7 +27,8 @@ console.log('jfsk');
             // perspective?
                 hasPerspective	= false,
 
-                perspective		= hasPerspective && Modernizr.csstransforms3d,
+                //perspective		= hasPerspective && Modernizr.csstransforms3d,
+                perspective		= true,
             // initialize function
                 init			= function() {
 
@@ -37,7 +38,7 @@ console.log('jfsk');
                     // initialize events
                     initEvents();
                     // define the inviewport selector
-                    defineViewport();
+                     defineViewport();
                     // gets the elements that match the previous selector
                     setViewportRows();
                     // if perspective add css
