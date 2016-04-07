@@ -10,4 +10,4 @@
 include_once '../classes/hub.class.php';
 
 echo json_encode(hub::getData('params'));
-//test
+//test 2
