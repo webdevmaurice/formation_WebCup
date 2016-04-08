@@ -14,7 +14,7 @@ console.log('jfsk');
             // navigation menu links
                 $links			= $('#ss-links > a'),
             // the window element
-                $win			= $(window),
+                $win			= $('#divVoyage'),
             // $win			= $('#divVoyage'),
             // we will store the window sizes here
                 winSize			= {},
@@ -25,10 +25,10 @@ console.log('jfsk');
             // page scroll easing
                 scollPageEasing = 'easeInOutExpo',
             // perspective?
-                hasPerspective	= false,
+                hasPerspective	= true,
 
-                //perspective		= hasPerspective && Modernizr.csstransforms3d,
-                perspective		= true,
+                perspective		= hasPerspective && Modernizr.csstransforms3d,
+               // perspective		= true,
             // initialize function
                 init			= function() {
 
@@ -182,8 +182,6 @@ console.log('jfsk');
 
                         }
                     });
-
-
                 },
             // sets the position of the rows (left and right row elements).
             // Both of these elements will start with -50% for the left/right (not visible)
@@ -194,7 +192,7 @@ console.log('jfsk');
                     // how much we scrolled so far
                     var winscroll	= $win.scrollTop(),
                     // the y value for the center of the screen
-                        winCenter	= winSize.height / 2 + winscroll;
+                        winCenter	= winSize.height + winscroll;
 
                     // for every row that is not inviewport
                     $rowsOutViewport.each( function(i) {
@@ -205,27 +203,28 @@ console.log('jfsk');
                         // the right side element
                             $rowR	= $row.find('div.ss-right'),
                         // top value
-                            rowT	= $row.offset().top;
+                            rowT	= $row.offset().top - 300;//Arvind set transition start point
 
                         // hide the row if it is under the viewport
-                        if( rowT > 2*winSize.height + winscroll ) {
+                        console.log(winSize.height + winscroll, ' - -', rowT);
+                        if( rowT > winSize.height + winscroll ) {
 
                             if( perspective ) {
 
                                 $rowL.css({
-                                    '-webkit-transform'	: 'translate3d(-75%, 0, 0) rotateY(-90deg) translate3d(-75%, 0, 0)',
+                                    '-webkit-transform'	: 'translate3d(-50%, 0, 0) rotateY(-90deg) translate3d(-75%, 0, 0)',
                                     'opacity'			: 0
                                 });
                                 $rowR.css({
-                                    '-webkit-transform'	: 'translate3d(75%, 0, 0) rotateY(90deg) translate3d(75%, 0, 0)',
+                                    '-webkit-transform'	: 'translate3d(50%, 0, 0) rotateY(90deg) translate3d(75%, 0, 0)',
                                     'opacity'			: 0
                                 });
 
                             }
                             else {
 
-                                $rowL.css({ left 		: '-50%' });
-                                $rowR.css({ right 		: '-50%' });
+                                $rowL.css({ left 		: '-25%' });
+                                $rowR.css({ right 		: '-25%' });
 
                             }
 
