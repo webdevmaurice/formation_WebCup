@@ -1,1 +1,25 @@
-<div>Content page d'acceuil</div>
+<script type="text/javascript">
+    (function ($) {
+        $('page_home').vegas({
+            slides: [
+                { src: '/img/slide1.jpg' },
+                { src: '/img/slide2.jpg' },
+                { src: '/img/slide3.jpg' }
+            ],
+            init: function (globalSettings) {
+                console.log("Init");
+            },
+            play: function (index, slideSettings) {
+                console.log("Play");
+            },
+            walk: function (index, slideSettings) {
+                console.log("Slide index " + index + " image " + slideSettings.src);
+            }
+        });
+
+
+
+    });
+</script>
+
+<div id="page_home"></div>
