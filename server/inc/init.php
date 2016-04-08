@@ -1,9 +1,9 @@
 <?php
 /** etablir la connexion  la bdd**/
-$_DB_HOST = "10.2.1.184";
-$_DB_DATABASE = "test";
-$_DB_USER = "root";
-$_DB_PASS = "";
+$_DB_HOST = "gator4204.hostgator.com";
+$_DB_DATABASE = "balgoarv_theme2050";
+$_DB_USER = "balgoarv_arvind";
+$_DB_PASS = "theme2050";
 
 /*try {
     $dbConnexion = new PDO('mysql:host=' . $_DB_HOST . ';dbname=' . $_DB_DATABASE, $_DB_USER, $_DB_PASS,
