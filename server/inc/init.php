@@ -21,3 +21,14 @@ if ($dbConnexion->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
+
+function autoload($nomdelaclasse) {
+    $fichier = '../classes/' . strtolower($nomdelaclasse) . '.class.php';
+
+
+    if ($fichier) {
+        require_once($fichier);
+    }
+}
+
+spl_autoload_register('autoload');
