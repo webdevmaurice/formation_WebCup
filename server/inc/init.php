@@ -8,9 +8,10 @@ $_DB_PASS = "theme2050";
 /*try {
     $dbConnexion = new PDO('mysql:host=' . $_DB_HOST . ';dbname=' . $_DB_DATABASE, $_DB_USER, $_DB_PASS,
         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_PERSISTENT => false));
+    echo "Connected successfully 888";
 }
 catch (PDOException $ex) {
-    debug($ex->getMessage());
+    echo $ex->getMessage();
 }*/
 
 // Create connection
