@@ -286,14 +286,19 @@ angular.module('teleportation')
 
 
         this.arrayData =    { brief : [
-                {b_img_class:"ss-circle-team", title_img:"Directors",        descrip:"This concept was conceived by our co-directors Arvind, Saif, Micheal and Hashim on 10 Fev 2049", title_descript:"Fastest inter-island mode", class:"ss-medium"},
+                {b_img_class:"ss-circle-team", title_img:"Directors",    descrip:"This concept was conceived by our co-directors Arvind, Saif, Micheal and Hashim on 10 Fev 2049", title_descript:"Fastest inter-island mode", class:"ss-medium"},
                 {b_img_class:"ss-circle-1", title_img:"Speed",           descrip:"Build with a 200YB/s (yottabyte) cable capacity, it can simultaneously handle a transfer of 1 millon persons per second", title_descript:"Fastest inter-island mode", class:"ss-medium"},
                 {b_img_class:"ss-circle-2", title_img:"Availability",    descrip:"Available 24 hours and 7 days a week", title_descript:"24/7 Service", class:"ss-medium"},
                 {b_img_class:"ss-circle-3", title_img:"Advanced System", descrip:"Our AI/Mind reading system is the most advanced and secure mechanism available. No competitor dare challenge us.", title_descript:"Hi-tech and Secure", class:"ss-medium"},
                 {b_img_class:"ss-circle-4", title_img:"Cheapest",        descrip:"We provide the cheapeast rates for inter island teleportation while providing the service free with teleporting within the island", title_descript:"Cheapest rate", class:"ss-medium"},
-                {b_img_class:"ss-circle-5", title_img:"test",            descrip:"blablabalablablabla", title_descript:"blabla", class:"ss-medium"},
-                {b_img_class:"ss-circle-6", title_img:"test",            descrip:"blablabalbalablbaal", title_descript:"blablaba", class:"ss-medium"}
-            ]};
+            ],
+        operation : [
+            {b_img_class:"ss-circle-hub", title_img:"",   descrip:"Veuillez vous rendre dans un de nos hubs se situant dans votre ile", title_descript:"Hub", class:"ss-medium"},
+            {b_img_class:"ss-circle-entry", title_img:"", descrip:"Marchez à travers le portail normalement", title_descript:"Entrée", class:"ss-medium"},
+            {b_img_class:"ss-circle-voyage", title_img:"",descrip:"Notre système AI récuperas automatiquement les infos requis comme la destination, l'objectif du voyage et vas construire", title_descript:"Teleportation", class:"ss-medium"},
+            {b_img_class:"ss-circle-bill", title_img:"",  descrip:"Avec les données récuperer par le AI, notre système débitera directement le montant requis de votre compte bancaire", title_descript:"Payment", class:"ss-medium"},
+            {b_img_class:"ss-circle-exit", title_img:"",  descrip:"La téléportation prendras approx 2s et vous vous retrouverez à votre destination, Simple et Efficace", title_descript:"Sortie", class:"ss-medium"}
+        ]};
 
         /*
         *             {id:"", title1:"", title2:"", data:[
