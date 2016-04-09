@@ -4,7 +4,6 @@
 angular.module('teleportation')
     .controller('VoyageCtrl',['$window', function VoyageCtrl ($window) {
         var vm = this;
-console.log('jfsk');
         var $sidescroll	= (function() {
 
             // the row elements
@@ -31,7 +30,7 @@ console.log('jfsk');
                // perspective		= true,
             // initialize function
                 init			= function() {
-
+                    $rows			= $('#ss-container > div.ss-row');
                     // get window sizes
                     getWinSize();
 
@@ -105,7 +104,6 @@ console.log('jfsk');
                     $(window).on({
                         // on window resize we need to redefine which rows are initially visible (this ones we will not animate).
                         'resize.Scrolling' : function( event ) {
-                            console.log('THIS IS SCrOLLING');
                             // get the window sizes again
                             getWinSize();
                             // redefine which rows are initially visible (:inviewport)
@@ -145,7 +143,6 @@ console.log('jfsk');
                     $( ".cube" ).on({
                         // on window resize we need to redefine which rows are initially visible (this ones we will not animate).
                         'resize.Scrolling' : function( event ) {
-                            console.log('THIS IS SCrOLLING');
                             // get the window sizes again
                             getWinSize();
                             // redefine which rows are initially visible (:inviewport)
@@ -196,17 +193,16 @@ console.log('jfsk');
 
                     // for every row that is not inviewport
                     $rowsOutViewport.each( function(i) {
-
+//console.log($(this));
                         var $row	= $(this),
                         // the left side element
                             $rowL	= $row.find('div.ss-left'),
                         // the right side element
                             $rowR	= $row.find('div.ss-right'),
                         // top value
-                            rowT	= $row.offset().top - 300;//Arvind set transition start point
+                            rowT	= $row.offset().top - 450;//Arvind set transition start point
 
                         // hide the row if it is under the viewport
-                        console.log(winSize.height + winscroll, ' - -', rowT);
                         if( rowT > winSize.height + winscroll ) {
 
                             if( perspective ) {
@@ -239,7 +235,6 @@ console.log('jfsk');
                             // value for the left / right of each side of the row.
                             // 0% is the limit
                                 val		= Math.max( factor * 5, 0 );
-                            console.log(val);
                             if( val <= 0 ) {
 
                                 // when 0% is reached show the pointer for that row
@@ -289,5 +284,34 @@ console.log('jfsk');
 
         })();
 
-        $sidescroll.init();
+
+        this.arrayData =    { brief : [
+                {b_img_class:"ss-circle-team", title_img:"Directors",        descrip:"This concept was conceived by our co-directors Arvind, Saif, Micheal and Hashim on 10 Fev 2049", title_descript:"Fastest inter-island mode", class:"ss-medium"},
+                {b_img_class:"ss-circle-1", title_img:"Speed",           descrip:"Build with a 200YB/s (yottabyte) cable capacity, it can simultaneously handle a transfer of 1 millon persons per second", title_descript:"Fastest inter-island mode", class:"ss-medium"},
+                {b_img_class:"ss-circle-2", title_img:"Availability",    descrip:"Available 24 hours and 7 days a week", title_descript:"24/7 Service", class:"ss-medium"},
+                {b_img_class:"ss-circle-3", title_img:"Advanced System", descrip:"Our AI/Mind reading system is the most advanced and secure mechanism available. No competitor dare challenge us.", title_descript:"Hi-tech and Secure", class:"ss-medium"},
+                {b_img_class:"ss-circle-4", title_img:"Cheapest",        descrip:"We provide the cheapeast rates for inter island teleportation while providing the service free with teleporting within the island", title_descript:"Cheapest rate", class:"ss-medium"},
+                {b_img_class:"ss-circle-5", title_img:"test",            descrip:"blablabalablablabla", title_descript:"blabla", class:"ss-medium"},
+                {b_img_class:"ss-circle-6", title_img:"test",            descrip:"blablabalbalablbaal", title_descript:"blablaba", class:"ss-medium"}
+            ]};
+
+        /*
+        *             {id:"", title1:"", title2:"", data:[
+         {b_img_class:"", title_img:"", descrip:"", title_descript:""},
+         {b_img_class:"", title_img:"", descrip:"", title_descript:""},
+         {b_img_class:"", title_img:"", descrip:"", title_descript:""},
+         {b_img_class:"", title_img:"", descrip:"", title_descript:""},
+         {b_img_class:"", title_img:"", descrip:"", title_descript:""},
+         {b_img_class:"", title_img:"", descrip:"", title_descript:""}
+         ]}
+         */
+        /*this.fnInit = function(){
+            console.log("INITIALISATION");
+            $sidescroll.init();
+        };
+        angular.element(document).ready(function () {
+            console.log('page loading completed');
+            $sidescroll.init();
+        });*/
+        window.setTimeout ( function() { console.log('Test'); $sidescroll.init();}, 0);
     }]);
