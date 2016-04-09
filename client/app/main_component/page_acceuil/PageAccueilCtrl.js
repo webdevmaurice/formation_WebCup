@@ -12,7 +12,7 @@ angular.module('teleportation')
                 { src: root+'/client/app/main_component/page_acceuil/img/slide2.jpg',transition:'swirlRight2'},
                 { src: root+'/client/app/main_component/page_acceuil/img/slide3.jpg',transition:'flash'}
             ],
-            delay: 3000,
+            delay: 6000,
             timer: false,
             shuffle: true,
             transitionDuration: 15000
