@@ -8,19 +8,14 @@ angular.module('teleportation')
 
         $("#accueil").vegas({
             slides: [
-                { src: root+'/client/app/main_component/page_acceuil/img/slide1.jpg'},
-                { src: root+'/client/app/main_component/page_acceuil/img/slide2.jpg'},
-                { src: root+'/client/app/main_component/page_acceuil/img/slide3.jpg'}
+                { src: root+'/client/app/main_component/page_acceuil/img/slide1.jpg',transition:'flash2'},
+                { src: root+'/client/app/main_component/page_acceuil/img/slide2.jpg',transition:'swirlRight2'},
+                { src: root+'/client/app/main_component/page_acceuil/img/slide3.jpg',transition:'flash'}
             ],
-            init: function (globalSettings) {
-                console.log("Init");
-            },
-            play: function (index, slideSettings) {
-                console.log("Play");
-            },
-            walk: function (index, slideSettings) {
-                console.log("Slide index " + index + " image " + slideSettings.src);
-            }
+            delay: 3000,
+            timer: false,
+            shuffle: true,
+            transitionDuration: 15000
         });
     }]);
 
