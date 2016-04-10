@@ -1,7 +1,7 @@
-.ss-links #divVoyage.a{
+.ss-links .divVoyage.a{
     background: #000;
 }
-.ss-links #divVoyage.a:hover{
+.ss-links .divVoyage.a:hover{
     background: #333;
 }
 h2.ss-subtitle:before{
@@ -42,11 +42,11 @@ h2.ss-subtitle:after{
 .ss-container h3 span{
     color: #fff;
 }
-.ss-container h3 #divVoyage.a{
+.ss-container h3 .divVoyage.a{
     font-size: 28px;
     color: #f8f8f8;
     display: block;
 }
-.ss-container h3 #divVoyage.a:hover{
+.ss-container h3 .divVoyage.a:hover{
     color: #fff;
 }
