@@ -127,42 +127,11 @@
 </head>
 
 <body style="overflow: hidden;">
-    <md-progress-circular 
-        md-mode="indeterminate" 
-        md-diameter="150" 
-        ng-show="isRouteLoading">
+    <ng-include src="'client/app/shared_component/nav/nav.html'"></ng-include>
+    <md-progress-circular
+            md-mode="indeterminate"
+            md-diameter="150"
+            ng-show="isRouteLoading">
     </md-progress-circular>
-    <!-- div class="container" -->
-        <div  class="animation outer-box">
-            <ng-include src="'client/app/shared_component/nav/nav.html'"></ng-include>
-            <div ng-view 
-                class="cube pt-page-1 {{vm.pageClass}}"  
-                bind-to-height="['height','#bt-menu']">
-            </div>
-        </div>
-    <!--/div-->
-    <!-- ng-md-icon
-        icon="{{clickIcon}}"
-        size="100"
-        options='{"duration": 375, "rotation": "none"}'
-        ng-click="clickIconMorph()">
-    </ng-md-icon -->
-    <!-- ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"duration": 375}'></ng-md-icon -->
-    <!-- script>
-        angular.module('teleportation')
-            .controller('demo',['$scope',function demoCtrl ($scope) {
-                $scope.fill = 'lightgreen';
-                $scope.clickIcon= 'thumb_up';$scope.icon = 'thumb_up';
-                $scope.clickIconMorph = function() {
-                    console.info('just passing by');
-                    if ($scope.clickIcon === 'thumb_up') {
-                        $scope.clickIcon = 'thumb_down';
-                    }
-                    else {
-                        $scope.clickIcon = 'thumb_up';
-                    }
-                };
-            }]);
-    </script -->
 </body>
 </html>

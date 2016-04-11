@@ -1,14 +1,14 @@
 angular.module('teleportation')
 .controller('navCtrl',['$scope','$interval', function navCtrl($scope, $interval){
-    var vm = this;
+    var nav = this;
     var colors = ['white','lightgreen', 'pink', 'wheat', '#cc99ff', '#abcdef'];
-    vm.menuIsOpen = false;
-    vm.menuIcon = 'menu';
-    vm.iconFill = colors[0];
-    vm.toggleMenu = function() {
-        vm.menuIcon = {menu:'close', close: 'menu'}[vm.menuIcon];
-    }
+    nav.menuIsOpen = false;
+    nav.menuIcon = 'menu';
+    nav.iconFill = colors[0];
+    nav.toggleMenu = function() {
+        nav.menuIcon = {menu:'close', close: 'menu'}[nav.menuIcon];
+    };
     $interval(function() {
-        vm.iconFill = colors[Math.floor(Math.random() * colors.length)];
+        nav.iconFill = colors[Math.floor(Math.random() * colors.length)];
     }, 1700);
 }]);

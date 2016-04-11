@@ -1,14 +1,15 @@
 <nav id="bt-menu"
     class="bt-menu"
-    ng-class="vm.menuIcon == 'menu' ? 'bt-menu-close' : 'bt-menu-open'"
-    ng-controller="navCtrl as vm">
+    ng-class="nav.menuIcon == 'menu' ? 'bt-menu-close' : 'bt-menu-open'"
+    ng-controller="navCtrl as nav"
+    ng-click="nav.closeMenu($event)">
     <md-button
         class="bt-menu-trigger"
-        ng-click="vm.toggleMenu($event)">
+        ng-click="nav.toggleMenu($event)">
         <ng-md-icon
-            icon="{{vm.menuIcon}}"
+            icon="{{nav.menuIcon}}"
             options='{"duration": 500, "rotation": "none"}' 
-            ng-attr-style="fill:{{vm.iconFill}}"
+            ng-attr-style="fill:{{nav.iconFill}}"
             size="48">
         </ng-md-icon>
       </md-button>
@@ -84,4 +85,9 @@
             </md-button>
         </li>
     </ul>
+    <div  class="animation outer-box">
+        <div ng-view
+             class="cube pt-page-1 {{vm.pageClass}}">
+        </div>
+    </div>
 </nav>
