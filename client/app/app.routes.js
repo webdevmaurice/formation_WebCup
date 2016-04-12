@@ -18,6 +18,10 @@ angular.module('teleportation')
                 controller: 'VoyageCtrl1',
                 controllerAs: 'vm'
             })
-            /*.when('/map')*/
+            .when('/map', {
+                templateUrl: baseUrl + 'map/map.html',
+                controller: 'MapCtrl',
+                controllerAs: 'vm'
+            })
             .otherwise({redirectTo: '/page_acceuil'});
     }]);
