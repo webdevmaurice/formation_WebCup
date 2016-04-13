@@ -1,21 +1,4 @@
-<div ng-app="app">
-    <div ng-controller="DemoCtrl as DC">
-        <tt-writer delay="{{DC.delay}}" print-trigger="DC.print">
-            <p ng-repeat="line in DC.lines track by $index" tt-line="tt-line">{{line}}</p>
-        </tt-writer>
-        <div ng-if="DC.done" class="settings">
-            <div class="btn">
-                <button ng-click="DC.print()">Restart print</button>
-            </div>
-            <div class="delay"><span>Delay from {{DC.delay/2|number:0}}ms to {{DC.delay*3/2|number:0}}ms</span><br/>
-                <input type="range" min="0" max="500" ng-model="DC.delay"/>
-            </div>
-      <textarea ng-model="DC.lines" ng-list="
-" ng-trim="false" ng-model-options="{updateOn: 'blur'}"></textarea>
-            <div><small>ng-list clears empty lines on parse</small><span>{{ DC.lines | json }}</span></div>
-        </div>
-    </div>
-</div>
+<div typewrite text="vm.arrayOfStupidLines"></div>
 
 <div id="logs">
     
