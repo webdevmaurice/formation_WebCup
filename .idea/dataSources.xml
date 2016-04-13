@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1171323042">
+  <component name="DataSourceManagerImpl" format="xml" hash="2404658925">
     <data-source source="LOCAL" name="MySQL - balgoarv_theme2050@gator4204.hostgator.com" uuid="54065f10-f768-444e-9453-0f3f12502677">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://gator4204.hostgator.com:3306/balgoarv_theme2050</jdbc-url>
-      <user-name>balgoarv_arvind</user-name>
-      <user-password>dfdedfc2dfcfdfc7dfcfdf98df9adf9fdf9a</user-password>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
@@ -16,4 +14,3 @@
     </data-source>
   </component>
 </project>
-
