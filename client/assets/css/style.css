@@ -51,11 +51,3 @@ html, body { height: 100%; }
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-.pt-page-1 {
-    background: #0ac2d2;
-}
-
-.pt-page-2 {
-    background: #7bb7fa;
-}
