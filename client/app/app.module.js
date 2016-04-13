@@ -1,4 +1,4 @@
-angular.module('teleportation',['ngAnimate','ngMaterial','ngMdIcons','materialCalendar','pascalprecht.translate','ngRoute','chart.js'])
+angular.module('teleportation',['ngAnimate','ngMaterial','ngMdIcons','materialCalendar','pascalprecht.translate','ngRoute','chart.js', 'angularTypewrite'])
     .run(function($rootScope){
         $rootScope.$on('$routeChangeStart', function(){
             $rootScope.isRouteLoading = true;

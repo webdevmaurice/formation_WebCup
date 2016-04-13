@@ -1,29 +1,48 @@
+<div ng-app="app">
+    <div ng-controller="DemoCtrl as DC">
+        <tt-writer delay="{{DC.delay}}" print-trigger="DC.print">
+            <p ng-repeat="line in DC.lines track by $index" tt-line="tt-line">{{line}}</p>
+        </tt-writer>
+        <div ng-if="DC.done" class="settings">
+            <div class="btn">
+                <button ng-click="DC.print()">Restart print</button>
+            </div>
+            <div class="delay"><span>Delay from {{DC.delay/2|number:0}}ms to {{DC.delay*3/2|number:0}}ms</span><br/>
+                <input type="range" min="0" max="500" ng-model="DC.delay"/>
+            </div>
+      <textarea ng-model="DC.lines" ng-list="
+" ng-trim="false" ng-model-options="{updateOn: 'blur'}"></textarea>
+            <div><small>ng-list clears empty lines on parse</small><span>{{ DC.lines | json }}</span></div>
+        </div>
+    </div>
+</div>
+
 <div id="logs">
-    <ul>
-        <li>01/04/2016 at 07:56 Travel from: Madagascar to: Reunion with purpose: Business</li>
-        <li>01/04/2016 at 12:37 Travel from: Reunion to: Seychelles with purpose: Lunch</li>
-        <li>01/04/2016 at 13:21 Travel from: Seychelles to: Reunion with purpose: Business</li>
-        <li>01/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home</li>
+    
+    01/04/2016 at 07:56 Travel from: Madagascar to: Reunion with purpose: Business<br>
+        01/04/2016 at 12:37 Travel from: Reunion to: Seychelles with purpose: Lunch<br>
+        01/04/2016 at 13:21 Travel from: Seychelles to: Reunion with purpose: Business<br>
+        01/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home<br>
         <hr class="style-four">
-        <li>02/04/2016 at 07:50 Travel from: Madagascar to: Reunion with purpose: Business</li>
-        <li>02/04/2016 at 12:32 Travel from: Reunion to: Rodrigues with purpose: Lunch</li>
-        <li>02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business</li>
-        <li>02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home</li>
+    02/04/2016 at 07:50 Travel from: Madagascar to: Reunion with purpose: Business<br>
+        02/04/2016 at 12:32 Travel from: Reunion to: Rodrigues with purpose: Lunch<br>
+        02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business<br>
+        02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home<br>
         <hr class="style-four">
-        <li>03/04/2016 at 07:53 Travel from: Madagascar to: Reunion with purpose: Business</li>
-        <li>03/04/2016 at 12:30 Travel from: Reunion to: Rodrigues with purpose: Lunch</li>
-        <li>03/04/2016 at 13:22 Travel from: Rodrigues to: Reunion with purpose: Business</li>
-        <li>03/04/2016 at 17:05 Travel from: Reunion to: Mauritius with purpose: Shopping</li>
-        <li>03/04/2016 at 19:33 Travel from: Mauritius to: Madagascar with purpose: Home</li>
+    03/04/2016 at 07:53 Travel from: Madagascar to: Reunion with purpose: Business<br>
+        03/04/2016 at 12:30 Travel from: Reunion to: Rodrigues with purpose: Lunch<br>
+        03/04/2016 at 13:22 Travel from: Rodrigues to: Reunion with purpose: Business<br>
+        03/04/2016 at 17:05 Travel from: Reunion to: Mauritius with purpose: Shopping<br>
+        03/04/2016 at 19:33 Travel from: Mauritius to: Madagascar with purpose: Home<br>
         <hr class="style-four">
-        <li>02/04/2016 at 07:50 Travel from: Madagascar to: Reunion with purpose: Business</li>
-        <li>02/04/2016 at 12:32 Travel from: Reunion to: Rodrigues with purpose: Lunch</li>
-        <li>02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business</li>
-        <li>02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home</li>
+    02/04/2016 at 07:50 Travel from: Madagascar to: Reunion with purpose: Business<br>
+        02/04/2016 at 12:32 Travel from: Reunion to: Rodrigues with purpose: Lunch<br>
+        02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business<br>
+        02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home<br>
         <hr class="style-four">
-        <li>02/04/2016 at 07:50 Travel from: Madagascar to: Reunion with purpose: Business</li>
-        <li>02/04/2016 at 12:32 Travel from: Reunion to: Rodrigues with purpose: Lunch</li>
-        <li>02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business</li>
-        <li>02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home</li>
-    </ul>
+    02/04/2016 at 07:50 Travel from: Madagascar to: Reunion with purpose: Business<br>
+        02/04/2016 at 12:32 Travel from: Reunion to: Rodrigues with purpose: Lunch<br>
+        02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business<br>
+        02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home<br>
+    
 </div>
