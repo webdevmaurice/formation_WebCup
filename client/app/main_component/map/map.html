@@ -1,10 +1,23 @@
-<p style="margin-top: 0;">Selected Avatar: <span class="radioValue">{{ vm.data.group3 }}</span></p>
-<md-radio-group ng-model="vm.data.group3">
-    <md-radio-button ng-repeat="it in vm.avatarData"
-                     ng-value="it.value"
-                     aria-label="{{it.title}}">
-        <md-icon class="md-light md-48">
-            {{it.id}}
-        </md-icon>
-    </md-radio-button>
-</md-radio-group>
+<md-card>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">Selected Avatar</span>
+            <span class="md-subhead">{{ vm.data.group3 }}</span>
+        </md-card-title-text>
+        <md-card-title-media>
+            <div class="md-media-lg card-media"></div>
+        </md-card-title-media>
+    </md-card-title>
+    <md-card-actions>
+        <md-radio-group ng-model="vm.data.group3">
+            <md-radio-button ng-repeat="it in vm.avatarData"
+                             ng-value="it.value"
+                             aria-label="{{it.title}}">
+                <md-icon class="md-light md-48">
+                    {{it.id}}
+                </md-icon>
+            </md-radio-button>
+        </md-radio-group>
+    </md-card-actions>
+</md-card>
+
