@@ -22,3 +22,38 @@
     font-size: 22px;
     background: #ff9713;;
 }
+
+
+.trapez{
+    padding-bottom:30%;
+    position:relative;
+    overflow:hidden;
+}
+.trapez:before{
+    background-color: #333333;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transform-origin: 0 100% 0;
+    width: 122%;
+    opacity: 0.75;
+    -webkit-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+}
+
+.content{
+    position:absolute;
+}
+
+
+.content h3 {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 15.4px;
+}
