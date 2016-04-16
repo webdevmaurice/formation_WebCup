@@ -26,15 +26,17 @@
 
 
 .trapez{
-    border-bottom: 800px solid #333333;
-    border-right: 580px solid transparent;
-    height: 0;
-    width: 1000px;
-    opacity:0.95
+    background:  #333333;
+    float: right;
+    opacity: 0.75;
+    width: 50%;
+    height: 100%;
 }
 
 .content_home{
     position:absolute;
+    color: #ffffff;
+    padding: 2%;
 }
 
 
@@ -48,7 +50,7 @@
 }
 
 .home_title{
-    font-size: 8px !important;
-    float: right;
+    margin-left: 55%;
     text-transform: uppercase;
+
 }
