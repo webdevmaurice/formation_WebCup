@@ -212,7 +212,7 @@
 }
 
 .link--nukun:hover {
-	color: #1e1a1b;
+	color: #47a3da;
 }
 
 .link--nukun::before,
@@ -231,7 +231,7 @@
 }
 
 .link--nukun::after {
-	background: #ACD07A;
+	background: #47a3da;
 	-webkit-transform: translate3d(-300%,0,0) scale3d(0,1,1);
 	transform: translate3d(-300%,0,0) scale3d(0,1,1);
 }

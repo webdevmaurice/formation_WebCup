@@ -50,7 +50,31 @@
 }
 
 .home_title{
-    margin-left: 55%;
+    z-index: 9999;
+    height: 120px;
     text-transform: uppercase;
 
+}
+
+a.sign_link{
+    font-size: 10px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    text-transform: none;
+}
+
+a:hover.sign_link{
+    color: #47a3da;
+    font-size: 12px;
+}
+
+.left{
+    float: left;
+    margin-left: 38%;
+    margin-top: 2%;
+}
+
+.right{
+    float: right;
 }
