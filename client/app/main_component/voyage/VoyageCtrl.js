@@ -758,14 +758,16 @@ angular.module('teleportation')
                 classie.add( splitlayout, 'reset-layout' );
 
                 leftSide.querySelector( 'div.intro-content' ).addEventListener( eventtype, function( ev ) {
-                    vm.isHuman = false;
+                    vm.isHuman = true;
+                    vm.isParcel=false;
                     vm.fnHuman();
                     reset();
                     classie.add( splitlayout, 'open-left' );
                 } );
 
                 rightSide.querySelector( 'div.intro-content' ).addEventListener( eventtype, function( ev ) {
-                    vm.isParcel = false;
+                    vm.isParcel = true;
+                    vm.isHuman = true;
                     vm.fnParcels();
                     reset();
                     classie.add( splitlayout, 'open-right' );
