@@ -147,13 +147,13 @@ body {
 }
 
 .back-left {
-	left: 12.5%;
+	left: 3.5%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 
 .back-right {
-	right: 12.5%;
+	right: 3.5%;
 	-webkit-transform: translateX(50%);
 	transform: translateX(50%);
 	color: #fff;
@@ -185,7 +185,7 @@ body {
 }
 
 .page-right {
-	left: 25%;
+	left: 10%;
 	outline: 5px solid #ecf0f1; /* avoid rounding gaps */
 	background: #ecf0f1;
 	color: #97a8b2;
@@ -264,6 +264,7 @@ body {
 	position: relative;
 	overflow: auto;
 	height: auto;
+    width:90%;
 }
 
 .open-right .side-left .overlay,
@@ -282,8 +283,8 @@ body {
 
 .open-right .side-right {
 	z-index: 200;
-	-webkit-transform: translateX(-150%);
-	transform: translateX(-150%);
+	-webkit-transform: translateX(-180%);
+	transform: translateX(-180%);
 }
 
 .close-right .side-right {
@@ -308,8 +309,8 @@ body {
 
 .open-left .side-left {
 	z-index: 200;
-	-webkit-transform: translateX(150%);
-	transform: translateX(150%);
+	-webkit-transform: translateX(180%);
+	transform: translateX(180%);
 }
 
 .close-left .side-left {

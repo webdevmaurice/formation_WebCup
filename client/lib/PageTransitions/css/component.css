@@ -63,6 +63,7 @@ html, body { height: 100%; }
 
 .pt-page-1 {
 	background: #0ac2d2;
+    overflow-x: hidden;
 }
 
 .pt-page-2 {
