@@ -8,14 +8,12 @@
         ng-click="nav.toggleMenu($event)">
         <ng-md-icon
             icon="{{nav.menuIcon}}"
-            options='{"duration": 500, "rotation": "none"}' 
-            ng-attr-style="fill:{{nav.iconFill}}"
-            size="48">
+            options='{"duration": 500, "rotation": "none"}'>
         </ng-md-icon>
       </md-button>
     <ul>
         <li>
-            <md-button 
+            <md-button
                 ng-href="#/page_acceuil">
                 <md-icon
                     class="md-light md-48">
@@ -99,7 +97,7 @@
     </ul>
     <div  class="animation outer-box">
         <div ng-view
-             class="cube pt-page-1 {{vm.pageClass}}">
+             class="cube {{vm.pageClass}}">
         </div>
     </div>
 </nav>
