@@ -26,12 +26,14 @@
 
 
 .trapez{
-    background:  #333333;
-    float: right;
+    background:  #fffbff;
+    float: left;
     opacity: 0.75;
     width: 50%;
     height: 100%;
 }
+
+
 
 .content_home{
     position:absolute;
@@ -51,21 +53,24 @@
 
 .home_title{
     z-index: 9999;
-    height: 120px;
+    text-align: center;
     text-transform: uppercase;
+    margin: auto;
+    margin-top: 10%;
 
 }
 
 a.sign_link{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
-    color: #ffffff;
+    color: #000000;
     text-transform: none;
 }
 
 a:hover.sign_link{
     color: #47a3da;
+    font-weight: bold;
     font-size: 12px;
 }
 
@@ -76,5 +81,7 @@ a:hover.sign_link{
 }
 
 .right{
-    float: right;
+    left: 78%;
+    position: relative;
+    top: 10%;
 }

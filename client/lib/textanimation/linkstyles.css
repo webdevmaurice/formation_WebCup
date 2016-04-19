@@ -465,17 +465,17 @@
 
 /* Manko */
 .link--manko {
-	color: #B1C0B2;
-	font-family: 'Playfair Display', serif;
-	font-weight: 900;
-	font-style: italic;
+	color: #47a3da;
+	font-family: "Segoe UI",Arial,sans-serif;
 	padding: 0.65em 0 0.8em;
 	-webkit-transition: color 0.5s;
 	transition: color 0.5s;
+    font-size: 62px;
+    text-spacing: space-adjacent ;
 }
 
 .link--manko:hover {
-	color: #1e1a1b;
+	color: #000000;
 }
 
 .link--manko::before,
@@ -484,7 +484,7 @@
 	position: absolute;
 	border-width: 4px 0;
 	border-style: solid;
-	border-color: #fff;
+	border-color: #000000;
 	pointer-events: none;
 	-webkit-transform: scale3d(0,1,1);
 	transform: scale3d(0,1,1);
@@ -515,10 +515,11 @@
 }
 
 .link--manko span {
-	color: #60AB64;
-	font-weight: 400;
+	color: #47a3da;
+	font-weight: bold;
 	position: absolute;
-	font-size: 0.2em;
+    font-family: 'Oswald', sans-serif;
+	font-size: 14px;
 	left: 0;
 	width: 100%;
 	opacity: 0;

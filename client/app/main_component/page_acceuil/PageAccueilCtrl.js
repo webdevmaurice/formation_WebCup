@@ -15,4 +15,8 @@ angular.module('teleportation')
             shuffle: false,
             transitionDuration: 15000
         });
+
+        setInterval(function(){
+            $('.link--manko').trigger('mouseover');
+        }, 3000);
     }]);
