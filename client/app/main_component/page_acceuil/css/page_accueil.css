@@ -25,12 +25,22 @@
 
 
 
-.trapez{
+/*.trapez{
     background:  #fffbff;
     float: left;
     opacity: 0.75;
     width: 50%;
     height: 100%;
+}*/
+
+.trapez {
+    background: #fffbff none repeat scroll 0 0;
+    height: 100% !important;
+    margin: auto;
+    opacity: 0.75;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -81,7 +91,9 @@ a:hover.sign_link{
 }
 
 .right{
-    left: 78%;
+    float: right;
     position: relative;
-    top: 10%;
+    text-align: left;
+    top: 25%;
+    margin-right: 15px;
 }
