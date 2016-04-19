@@ -21,7 +21,7 @@
 
 .bt-menu-trigger {
     position: fixed;
-    top: 10px;
+    bottom: 10px;
     left: 20px;
     z-index: 100;
     display: block;
@@ -30,7 +30,28 @@
     cursor: pointer;
 }
 
+.bt-menu-trigger:hover{
+    width: 55px;
+    height: 55px;
+}
 
+.bt-menu-trigger > ng-md-icon {
+    fill: white;
+}
+
+.bt-menu-trigger:hover > ng-md-icon {
+    fill:#ECC30B;
+}
+
+.bt-menu-trigger > ng-md-icon > svg{
+     width: 48px;
+     height: 48px;
+ }
+
+.bt-menu-trigger:hover > ng-md-icon > svg{
+    width: 53px;
+    height: 53px;
+}
 .bt-menu ul {
     position: fixed;
     margin: 0;
@@ -126,6 +147,13 @@
     outline: none;
     text-decoration: none;
 }
+.bt-menu ul li a:hover > md-icon{
+    color: #f9e27e;
+    font-size: 55px;
+    -ms-transform: rotate(21deg); /* IE 9 */
+    -webkit-transform: rotate(21deg); /* Chrome, Safari, Opera */
+    transform: rotate(21deg);
+}
 
 .bt-menu ul:first-of-type li a {
     padding: 0 20px;
@@ -141,31 +169,4 @@
     color: transparent;
     text-align: center;
     font-size: 0px;
-}
-
-.bt-menu ul li a:before {
-    color: #fff;
-    font-size: 24px;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-}
-
-/*.bt-menu ul:first-of-type li a:hover,
-.bt-menu ul:first-of-type li a:focus,
-.bt-menu ul li a:hover:before,
-.bt-menu ul li a:focus:before {
-    color: #1abc9c;
-}*/
-
-ng-md-icon {
-    -webkit-transition: fill 750ms ease-in-out;
-    -moz-transition: fill 750ms ease-in-out;
-    -o-transition: fill 750ms ease-in-out;
-    transition: fill 750ms ease-in-out;
-}
-ng-md-icon > svg {
-    -webkit-transition: width 750ms ease-in-out, height 750ms ease-in-out;
-    -moz-transition: width 750ms ease-in-out, height 750ms ease-in-out;
-    -o-transition: width 750ms ease-in-out, height 750ms ease-in-out;
-    transition: width 750ms ease-in-out, height 750ms ease-in-out;
 }
