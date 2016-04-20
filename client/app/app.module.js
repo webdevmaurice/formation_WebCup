@@ -32,7 +32,7 @@ angular.module('teleportation',['ngAnimate','ngMaterial','ngMdIcons','materialCa
             '800': '#a38708',
             '900': '#8b7206',
             'A100': '#fae896',
-            'A200': '#fbedae',
+            'A200': '#ffffff',
             'A400': '#fcf3c7',
             'A700': '#725e05'
         };
@@ -66,12 +66,12 @@ angular.module('teleportation',['ngAnimate','ngMaterial','ngMdIcons','materialCa
             '200': '#66c8fa',
             '300': '#4dbffa',
             '400': '#35b6f9',
-            '500': '#1cadf8',
+            '500': '#C2C2C2',
             '600': '#08a3f3',
             '700': '#0792da',
             '800': '#0682c1',
             '900': '#0571a9',
-            'A100': '#b0e3fd',
+            'A100': '#ffffff',
             'A200': '#c9ecfd',
             'A400': '#e2f4fe',
             'A700': '#046090'

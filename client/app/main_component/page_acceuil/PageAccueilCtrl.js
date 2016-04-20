@@ -17,6 +17,6 @@ angular.module('teleportation')
         });
 
         setInterval(function(){
-            $('.link--manko').trigger('mouseover');
+            $('a.link--manko').trigger('mouseover');
         }, 3000);
     }]);

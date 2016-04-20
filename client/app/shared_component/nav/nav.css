@@ -40,7 +40,7 @@
 }
 
 .bt-menu-trigger:hover > ng-md-icon {
-    fill:#ECC30B;
+    fill:rgba(255, 255, 255, 1);;
 }
 
 .bt-menu-trigger > ng-md-icon > svg{
@@ -148,7 +148,7 @@
     text-decoration: none;
 }
 .bt-menu ul li a:hover > md-icon{
-    color: #f9e27e;
+    color: rgba(255, 255, 255, 1);
     font-size: 55px;
     -ms-transform: rotate(21deg); /* IE 9 */
     -webkit-transform: rotate(21deg); /* Chrome, Safari, Opera */
