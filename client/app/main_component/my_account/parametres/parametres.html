@@ -1,9 +1,36 @@
 <div layout="column" layout-align="center center" style="padding:40px" ng-cloak>
-    <p>Select can call an arbitrary function on show. If this function returns a promise, it will display a loading indicator while it is being resolved:</p>
-    <div layout="column" layout-align="center center">
-        <md-select placeholder="Assign to user" ng-model="vm.paramSelectedUser" md-on-open="vm.paramLoadUsers()" style="min-width: 200px;">
-            <md-option ng-value="user" ng-repeat="user in vm.paramUsers">{{user.name}}</md-option>
-        </md-select>
-        <p class="md-caption">You have assigned the task to: {{ vm.paramSelectedUser ? vm.paramSelectedUser.name : 'No one yet' }}</p>
+    <div>
+        <md-input-container>
+            <label>First Name</label>
+            <input ng-model="user.fname">
+        </md-input-container>
+        <md-input-container>
+            <label>Last Name</label>
+            <input ng-model="user.lname">
+        </md-input-container>
+        <md-input-container>
+            <label>Email</label>
+            <input ng-model="user.email" type="email">
+        </md-input-container>
     </div>
+    <div>
+        <md-select placeholder="Gender" ng-model="vm.paramSelectedgender" md-on-open="vm.paramLoadGenders()" style="min-width: 100px;">
+            <md-option ng-value="gender" ng-repeat="gender in vm.paramGenders">{{gender.name}}</md-option>
+        </md-select>
+        <md-select  placeholder="Country" ng-model="vm.paramSelectedCountry" md-on-open="vm.paramLoadCountries()" style="min-width: 100px;">
+            <md-option ng-value="country" ng-repeat="country in vm.paramCountries">{{country.name}}</md-option>
+        </md-select>
+        <md-input-container >
+            <label>Address</label>
+            <input ng-model="user.address">
+        </md-input-container>
+        <md-input-container>
+            <md-datepicker ng-model="user.submissionDate" md-placeholder="Enter date">
+            </md-datepicker>
+        </md-input-container>
+    </div>
+
+
+
+
 </div>
