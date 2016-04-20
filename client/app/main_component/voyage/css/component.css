@@ -316,8 +316,8 @@ body {
 
 .open-left .side-left {
 	z-index: 200;
-	-webkit-transform: translateX(150%);
-	transform: translateX(150%);
+	-webkit-transform: translateX(175%);
+	transform: translateX(175%);
 }
 
 .close-left .side-left {
