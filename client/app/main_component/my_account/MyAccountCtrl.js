@@ -6,13 +6,13 @@ angular.module('teleportation')
         vm.onClick = function (points, evt) {
             console.log(points, evt);
         };
-        /*$http.get('server/webservice/statistique.php')
+        $http.get('server/webservice/statistique.php')
            .then(function(config){
                console.log(config.data);
 
                vm.labels = config.data.labels;
                vm.data = config.data.data;
-           })*/
+           })
         vm.user = {
             fname: 'Hashim',
             lname: 'Mukoon',
