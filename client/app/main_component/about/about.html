@@ -1,7 +1,19 @@
+<md-content>
+    <div style="padding:40px">
+        <h3 class="question">FAST LAP</h3>
+        <p><b>Addresse  : </b> 85 Rue St John, Port-Louis, Maurice</p>
+        <p><b>Téléphone : </b>(+230) 455 88 99 </p>
+        <p><b>E-mail    : </b> fastlap@gmail.com</p>
+    </div>
+</md-content>
+
 <md-list-item class="md-3-line md-long-text">
     <div class="md-list-item-text">
-        <h3>Qui sommes-nous ?</h3>
-        <p>
+        <h3 class="question">Qui sommes-nous ?</h3>
+        <div>
+            <img class="image_about" src="img/service1.jpg">
+        </div>
+        <p class="ctext">
             Fastlap est une société de tranport fondée en 2014 qui offre le moyen le plus rapide de transport par l'intermédiaire de centres de téléportation situés dans plusieurs pays.
         </p>
     </div>
@@ -9,20 +21,43 @@
 
 <md-list-item class="md-3-line md-long-text">
     <div class="md-list-item-text">
-        <h3>Pourquoi nous ?</h3>
-        <p>
-            Avec maintenant plus de 1000 centres de téléportation dans plus de 6 pays de l'océan indien, Faslap est le moyen de transportation numéro 1.
+        <h3 class="question">Comment vous aider ?</h3>
+        <div>
+            <img class="image_about" src="img/service3.jpg">
+        </div>
+        <p class="ctext">
+            Fast lap vous offres le déplacement le plus rapide pour vos besoins de Shoping, Business, Vacances ou autres raisons.
+        </p>
+
+        <md-list-item>Des salle de réunion sont a disposition dans plusieurs de nos centres pour les voyage de nature professionelle.</md-list-item>
+        <md-list-item>Nous offrons aussi des logement dans les 6 pays associés a Fast lap.</md-list-item>
+        <md-list-item>Les livraison de colis via Fast lap se font dans un délai d'une heure seulement.</md-list-item>
+
+    </div>
+</md-list-item>
+
+<md-list-item class="md-3-line md-long-text">
+    <div class="md-list-item-text">
+        <h3 class="question">Pourquoi nous ?</h3>
+        <div>
+            <img class="image_about" src="img/service2.jpg">
+        </div>
+        <p class="ctext">
+            Avec maintenant plus de 500 centres de téléportation dans plus de 6 pays de l'océan indien, Faslap est le moyen de transportation numéro 1.
         </p>
     </div>
 </md-list-item>
 
 <md-list-item class="md-3-line md-long-text">
     <div class="md-list-item-text">
-        <h3>Nos prix?</h3>
+        <h3 class="question">Nos prix?</h3>
         <p>
             Fast Lap vous offres le meilleurs prix pour vos voyages et import/export de coli. Nous offrons actuellement des tarrifs speciaux ci-dessous:
             <div>
-
+                <md-list-item>Option colis    : Rs 500   (pays)/ Rs 100 (centres)</md-list-item>
+                <md-list-item>Option voyage   : Rs 7500  (pays)/ Rs 550 (centres)</md-list-item>
+                <md-list-item>Option business : Rs 14500 (pays)/ Rs 650 (centres)</md-list-item>
+                <md-list-item>Option vacance  : Rs 22500 (pays)/ Rs 150 (centres)</md-list-item>
             </div>
         </p>
     </div>
@@ -31,44 +66,34 @@
 
 
 
-    <md-content>
-        <div id="contact" layout="column" layout-align="center center" style="padding:40px" ng-cloak>
-            <div>
-                <md-input-container>
-                    <label>Nom</label>
-                    <input ng-model="vm.user.fname">
-                </md-input-container>
-                <md-input-container>
-                    <label>Prénom</label>
-                    <input ng-model="vm.user.lname">
-                </md-input-container>
-            </div>
-            <div>
-                <md-input-container>
-                    <label>Addresse e-mail</label>
-                    <input class="large_input"  ng-model="vm.user.email" type="email">
-                </md-input-container>
-            </div>
-            <div>
-                <md-input-container >
-                    <label>Message</label>
-                    <textarea class="large_input" ng-model="vm.user.message"></textarea>
-                </md-input-container>
-            </div>
-            <div>
-                <md-button class="md-primary md-hue-1">Envoyer</md-button>
-            </div>
+<md-content>
+    <div id="contact" layout="column" layout-align="center center" style="padding:40px" ng-cloak>
+        <h3 class="question">Contactez nous</h3>
+        <div>
+            <md-input-container>
+                <label>Nom</label>
+                <input ng-model="vm.user.fname">
+            </md-input-container>
+            <md-input-container>
+                <label>Prénom</label>
+                <input ng-model="vm.user.lname">
+            </md-input-container>
         </div>
-   </md-content>
-
-
-
-
-
-
-
-
-
-
-
+        <div>
+            <md-input-container>
+                <label>Addresse e-mail</label>
+                <input class="large_input"  ng-model="vm.user.email" type="email">
+            </md-input-container>
+        </div>
+        <div>
+            <md-input-container >
+                <label>Message</label>
+                <textarea class="large_input" ng-model="vm.user.message"></textarea>
+            </md-input-container>
+        </div>
+        <div>
+            <md-button class="md-primary md-hue-1">Envoyer</md-button>
+        </div>
+    </div>
 </md-content>
+
