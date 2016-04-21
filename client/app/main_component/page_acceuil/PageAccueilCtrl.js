@@ -10,10 +10,10 @@ angular.module('teleportation')
                 { src: 'client/app/main_component/page_acceuil/img/slide2.jpg',transition:'zoomOut'},
                 { src: 'client/app/main_component/page_acceuil/img/slide3.jpg',transition:'zoomOut'}
             ],
-            delay: 6000,
+            delay: 8000,
             timer: false,
             shuffle: false,
-            transitionDuration: 15000
+            transitionDuration: 25000
         });
 
         setInterval(function(){

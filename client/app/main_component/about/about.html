@@ -1,39 +1,79 @@
-<section class="content">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>For more information on fastlap agency </h3>
-                <hr>
-                <address>
-                    <strong>Mauritius address:</strong> eNest LLC 4809, E Thistle Landing, Dr. Suit 100 AZ 85044 USA ,<br>
-                    <strong>Phone:</strong> +1-888-414-6658
-                </address>
-
-                <address>
-                    <strong>Reunion:</strong>  (Haftungsbeschraenkt/Limited-Liability), Morsering 2, Munich 80937 Germany , <br>
-                    <strong>Phone:</strong> +49 151 2757 2810
-                </address>
-            </div>
-
-            <div class="col-sm-8 contact-form">
-                <form id="contact" method="post" class="form" role="form">
-                    <div class="row">
-                        <div class="col-xs-6 col-md-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
-                        </div>
-                        <div class="col-xs-6 col-md-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
-                        </div>
-                    </div>
-                    <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
-                    <br />
-                    <div class="row">
-                        <div class="col-xs-12 col-md-12 form-group">
-                            <button class="btn btn-primary pull-right" type="submit">Submit</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+<md-list-item class="md-3-line md-long-text">
+    <div class="md-list-item-text">
+        <h3>Qui sommes-nous ?</h3>
+        <p>
+            Fastlap est une société de tranport fondée en 2014 qui offre le moyen le plus rapide de transport par l'intermédiaire de centres de téléportation situés dans plusieurs pays.
+        </p>
     </div>
-</section>
+</md-list-item>
+
+<md-list-item class="md-3-line md-long-text">
+    <div class="md-list-item-text">
+        <h3>Pourquoi nous ?</h3>
+        <p>
+            Avec maintenant plus de 1000 centres de téléportation dans plus de 6 pays de l'océan indien, Faslap est le moyen de transportation numéro 1.
+        </p>
+    </div>
+</md-list-item>
+
+<md-list-item class="md-3-line md-long-text">
+    <div class="md-list-item-text">
+        <h3>Nos prix?</h3>
+        <p>
+            Fast Lap vous offres le meilleurs prix pour vos voyages et import/export de coli. Nous offrons actuellement des tarrifs speciaux ci-dessous:
+            <div>
+
+            </div>
+        </p>
+    </div>
+</md-list-item>
+
+
+
+<div id="contact" ng-cloak>
+    <md-content>
+        <form name="contact_us">
+            <h3>Pour plus d'information contactez nous</h3>
+            <div>
+                <md-input-container>
+                    <label>Nom</label>
+                    <input name="firstName" ng-model="firstName" required>
+                    <div ng-messages="userForm.firstName.$error">
+                        <div ng-message="required">Ce champ est requis</div>
+                    </div>
+                </md-input-container>
+
+            </div>
+
+            <div>
+                <md-input-container>
+                    <label>Prénom</label>
+                    <input name="lastNamer" ng-model="lastName" required>
+                    <div ng-messages="userForm.lastName.$error">
+                        <div ng-message="required">Ce champ est requis</div>
+                    </div>
+                </md-input-container>
+            </div>
+
+            <div>
+                <md-input-container>
+                    <label>Message</label>
+                    <textarea name="message" ng-model="message" required></textarea>
+                </md-input-container>
+            </div>
+
+            <div>
+                <md-input-container>
+                    <label>Addresse e-mail</label>
+                    <input name="email" type="email" ng-model="email" required>
+                    <div ng-messages="userForm.email.$error">
+                        <div ng-message="required">Ce champ est requis</div>
+                    </div>
+                </md-input-container>
+            </div>
+
+            <md-button class="md-primary md-hue-1">Envoyer</md-button>
+        </form>
+    </md-content>
+
+</div>

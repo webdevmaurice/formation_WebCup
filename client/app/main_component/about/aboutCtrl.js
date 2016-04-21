@@ -8,4 +8,5 @@ angular.module('teleportation')
         vm.pageClass = "about";
 
 
+
     }]);
