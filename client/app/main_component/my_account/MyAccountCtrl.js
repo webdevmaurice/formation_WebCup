@@ -16,10 +16,11 @@ angular.module('teleportation')
         vm.user = {
             fname: 'Hashim',
             lname: 'Mukoon',
-            email: 'ipsum@lorem.com',
+            email: 'hash.im@pharmagst.mu',
             gender: 'Male',
             address: '1600 Amphitheatre Pkwy',
-            country: 'Mauritius'
+            country: 'Mauritius',
+            submissionDate : '01/02/1990'
         };
 
 
