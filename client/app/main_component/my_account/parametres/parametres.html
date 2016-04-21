@@ -2,31 +2,31 @@
     <div>
         <md-input-container>
             <label>First Name</label>
-            <input ng-model="user.fname">
+            <input ng-model="vm.user.fname">
         </md-input-container>
         <md-input-container>
             <label>Last Name</label>
-            <input ng-model="user.lname">
-        </md-input-container>
-        <md-input-container>
-            <label>Email</label>
-            <input ng-model="user.email" type="email">
+            <input ng-model="vm.user.lname">
         </md-input-container>
     </div>
     <div>
-        <md-select placeholder="Gender" ng-model="vm.paramSelectedgender" md-on-open="vm.paramLoadGenders()" style="min-width: 100px;">
+        <md-input-container>
+            <label>Email</label>
+            <input ng-model="vm.user.email" type="email">
+        </md-input-container>
+        <md-datepicker ng-model="vm.user.submissionDate" md-placeholder="Enter date">
+        </md-datepicker>
+    </div>
+    <div>
+        <md-select placeholder="Gender" ng-model="vm.paramSelectedgender" md-on-open="vm.paramLoadGenders()" >
             <md-option ng-value="gender" ng-repeat="gender in vm.paramGenders">{{gender.name}}</md-option>
         </md-select>
-        <md-select  placeholder="Country" ng-model="vm.paramSelectedCountry" md-on-open="vm.paramLoadCountries()" style="min-width: 100px;">
+        <md-select  placeholder="Country" ng-model="vm.paramSelectedCountry" md-on-open="vm.paramLoadCountries()">
             <md-option ng-value="country" ng-repeat="country in vm.paramCountries">{{country.name}}</md-option>
         </md-select>
         <md-input-container >
             <label>Address</label>
-            <input ng-model="user.address">
-        </md-input-container>
-        <md-input-container>
-            <md-datepicker ng-model="user.submissionDate" md-placeholder="Enter date">
-            </md-datepicker>
+            <input ng-model="vm.user.address">
         </md-input-container>
     </div>
 

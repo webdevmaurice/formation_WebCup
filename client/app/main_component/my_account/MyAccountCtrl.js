@@ -6,20 +6,21 @@ angular.module('teleportation')
         vm.onClick = function (points, evt) {
             console.log(points, evt);
         };
-        /*$http.get('server/webservice/statistique.php')
+        $http.get('server/webservice/statistique.php')
            .then(function(config){
                console.log(config.data);
 
                vm.labels = config.data.labels;
                vm.data = config.data.data;
-           })*/
+           })
         vm.user = {
             fname: 'Hashim',
             lname: 'Mukoon',
-            email: 'ipsum@lorem.com',
+            email: 'hash.im@pharmagst.mu',
             gender: 'Male',
             address: '1600 Amphitheatre Pkwy',
-            country: 'Mauritius'
+            country: 'Mauritius',
+            submissionDate : '01/02/1990'
         };
 
 
@@ -85,6 +86,7 @@ angular.module('teleportation')
             "<pre>02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business</pre>" +
             "<pre>02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home</pre>"
         ];
-
+        
+        vm.startType = false;
     }]);
     
