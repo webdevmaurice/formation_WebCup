@@ -2,7 +2,7 @@
     <div>
         <md-input-container>
             <label>First Name</label>
-            <input ng-model="user.fname">
+            <input ng-model="vm.user.fname">
         </md-input-container>
         <md-input-container>
             <label>Last Name</label>
@@ -24,10 +24,8 @@
             <label>Address</label>
             <input ng-model="user.address">
         </md-input-container>
-        <md-input-container>
-            <md-datepicker ng-model="user.submissionDate" md-placeholder="Enter date">
-            </md-datepicker>
-        </md-input-container>
+        <md-datepicker ng-model="user.submissionDate" md-placeholder="Enter date">
+        </md-datepicker>
     </div>
 
 
