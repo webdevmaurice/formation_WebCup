@@ -85,6 +85,7 @@ angular.module('teleportation')
             "<pre>02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business</pre>" +
             "<pre>02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home</pre>"
         ];
-
+        
+        vm.startType = false;
     }]);
     
