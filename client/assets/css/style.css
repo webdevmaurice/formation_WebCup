@@ -38,6 +38,10 @@ html, body { height: 100%; }
     transform-style: preserve-3d;
 }
 
+
+.large_input{
+    width: 360px !important;
+}
 /*****************************************************/
 /*.pt-perspective {
     position: relative;
