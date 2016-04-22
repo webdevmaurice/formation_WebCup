@@ -183,7 +183,7 @@ h2.ss-subtitle:after{
 .ss-container h3{
     margin-top: 34px;
     padding: 10px 15px;
-    background: forestgreen;
+    background: #067BC2;
     text-shadow: 1px 1px 1px rgba(26, 27, 33, 0.8)
 }
 .ss-container .ss-medium h3{
