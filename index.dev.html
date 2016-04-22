@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <!-- Jquery -->
-    <script type="text/javascript" src="client/lib/jquery/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="client/lib/jquery/jquery-1.12.2.js"></script>
 
     <!-- Lodash -->
     <script type="text/javascript" src="client/lib/lodash/lodash.js"></script>
@@ -138,18 +138,14 @@
 
     <!--jquery ease-->
     <script type="text/javascript" src="client/app/main_component/voyage/lib/jquery.easing.1.3.js"></script>
-    <!-- CSS webtools.css-->
-    <!-- SCRIPTS & angular scripts webtools.js-->
-    <!-- user css -->
-    <!-- user scripts -->
 </head>
 
 <body style="overflow: hidden;">
-    <ng-include src="'client/app/shared_component/nav/nav.html'"></ng-include>
-    <md-progress-circular
-            md-mode="indeterminate"
-            md-diameter="150"
-            ng-show="isRouteLoading">
-    </md-progress-circular>
+<ng-include src="'client/app/shared_component/nav/nav.html'"></ng-include>
+<md-progress-circular
+        md-mode="indeterminate"
+        md-diameter="150"
+        ng-show="isRouteLoading">
+</md-progress-circular>
 </body>
 </html>
