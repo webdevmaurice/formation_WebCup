@@ -506,7 +506,7 @@ button.md-button::-moz-focus-inner {
   margin: 6px 8px;
   line-height: 36px;
   min-height: 36px;
-  background: transparent;
+  background: rgba(8,126,194,0.75);
   white-space: nowrap;
   min-width: 88px;
   text-align: center;

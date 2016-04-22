@@ -9,7 +9,7 @@
 .question{
     color: #47a3da;
     padding-bottom: 10px;
-    font-size: 22px;
+    font-size: 22px !important;
     font-family: "Roboto", sans-serif;
 }
 

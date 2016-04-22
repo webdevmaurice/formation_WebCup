@@ -91,11 +91,14 @@ a:hover.sign_link{
 }
 
 .right{
-    float: right;
-    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+    display: block;
+    left: 88%;
+    position: fixed;
     text-align: left;
-    top: 25%;
-    margin-right: 15px;
+    width: 150px;
+    z-index: 100;
 }
 
 .leger{
