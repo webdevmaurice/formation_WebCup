@@ -5,13 +5,13 @@
 
 /* General Demo Style */
 #ss-container{
-    background: #f7f7f7 url(../img/old_wall.jpg) repeat top left;
+    background: antiquewhite;
     color: rgba(0,0,0,0.8);
     font-family: 'Kelly Slab','Myriad Pro', Arial, sans-serif;
     font-size: 15px;
 }
 .divVoyage{
-    background: #f7f7f7 url(../img/old_wall.jpg) repeat top left;
+    background: antiquewhite;
     color: rgba(0,0,0,0.8);
     font-family: 'Kelly Slab','Myriad Pro', Arial, sans-serif;
     font-size: 15px;
