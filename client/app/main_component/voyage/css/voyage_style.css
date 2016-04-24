@@ -256,3 +256,65 @@ h2.ss-subtitle:after{
 .ss-circle-7{
     background-image: url(../img/webdev.jpg);
 }
+
+.circular1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(../../page_acceuil/img/slide1.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.circular2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(../../page_acceuil/img/slide2.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.circular3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(../../page_acceuil/img/slide3.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.circular{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    z-index: 9999999;
+    left: 50%;
+    top: -155px;
+    text-align: center;
+}
+
+.info{
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    position: relative;
+    left: -100%;
+    text-transform: none;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+h5{
+    margin-top: 45px;
+    font-size: 16px;
+    text-decoration: underline;
+    font-family: "Roboto", sans-serif;
+    color: #067BC2;
+}

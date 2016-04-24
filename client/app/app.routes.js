@@ -18,6 +18,12 @@ angular.module('teleportation')
                 controller: 'VoyageCtrl1',
                 controllerAs: 'vm'
             })
+            .when('/events', {
+                //templateUrl: baseUrl + 'voyage/voyage.html',
+                templateUrl: baseUrl + 'event/event.html',
+                controller: 'EventCtrl',
+                controllerAs: 'vm'
+            })
             .when('/map', {
                 templateUrl: baseUrl + 'map/map.html',
                 controller: 'MapCtrl',
