@@ -111,3 +111,66 @@ html,a {
     /* styling for any way a link is about to be used */
     outline: 0 !important;
 }
+
+.model{
+    background: rgba(255,255,255,0.8);
+    height: auto;
+}
+
+#slides {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+#slides ul {
+    list-style: none;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#slides li {
+    width: 100%;
+    height: 250px;
+    float: left;
+    text-align: center;
+    position: relative;
+    font-family: lato, sans-serif;
+}
+
+.btn-bar {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 40px;
+}
+
+#buttons {
+    padding: 0 0 5px 0;
+    float: right;
+}
+
+#buttons a {
+    text-align: center;
+    display: block;
+    font-size: 50px;
+    float: left;
+    outline: 0;
+    margin: 0 60px;
+    color: #067BC2;
+    text-decoration: none;
+    display: block;
+    padding: 9px;
+    width: 35px;
+}
+
+a#prev:hover,
+a#next:hover {
+    color: #FFF;
+    text-shadow: .5px 0px #067BC2;
+}

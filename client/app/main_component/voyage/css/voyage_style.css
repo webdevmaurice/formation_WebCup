@@ -257,6 +257,43 @@ h2.ss-subtitle:after{
     background-image: url(../img/webdev.jpg);
 }
 
+.circular4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background-image: url(../img/webdev.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid rgba(164,166,181,0.8);
+}
+
+
+.circular5 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background-image: url(../img/time.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid rgba(164,166,181,0.8);
+}
+
+.circular6{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background-image:url(../img/voyage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid rgba(164,166,181,0.8);
+}
+
 .circular1 {
     width: 150px;
     height: 150px;
@@ -266,6 +303,7 @@ h2.ss-subtitle:after{
     background: url(../../page_acceuil/img/slide1.jpg) no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 5px solid rgba(164,166,181,0.8);
 }
 
 
@@ -278,6 +316,7 @@ h2.ss-subtitle:after{
     background: url(../../page_acceuil/img/slide2.jpg) no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 5px solid rgba(164,166,181,0.8);
 }
 
 .circular3 {
@@ -289,15 +328,14 @@ h2.ss-subtitle:after{
     background: url(../../page_acceuil/img/slide3.jpg) no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 5px solid rgba(164,166,181,0.8);
 }
 
 .circular{
-    font-family: "Roboto", sans-serif;
-    position: relative;
-    z-index: 9999999;
-    left: 50%;
-    top: -155px;
-    text-align: center;
+    text-align: left;
+    float: left;
+    margin-left: 15%;
+    margin-top: 2%;
 }
 
 .info{
@@ -309,10 +347,10 @@ h2.ss-subtitle:after{
     text-transform: none;
     font-weight: 400;
     margin-right: 10px;
+    float: left;
 }
 
 h5{
-    margin-top: 45px;
     font-size: 16px;
     text-decoration: underline;
     font-family: "Roboto", sans-serif;
