@@ -6,24 +6,42 @@ angular.module('teleportation')
         console.log("MapCtrl");
         var vm = this;
         vm.pageClass = "map";
-        vm.data = {
-            group1 : 'Banana',
-            group2 : '2',
-            group3 : 'avatar-2'
-        };
+        vm.selectedMap = 'Comores';
         vm.avatarData = [{
             id: "add_location",
-            title: 'avatar 1',
-            value: 'avatar-1'
+            title: 'comoros',
+            value: 'Comores'
         },{
             id: "add_location",
-            title: 'avatar 2',
-            value: 'avatar-2'
+            title: 'mauritius',
+            value: 'Maurice'
         },{
             id: "add_location",
-            title: 'avatar 3',
-            value: 'avatar-3'
+            title: 'reunion',
+            value: 'Reunion'
+        },{
+            id: "add_location",
+            title: 'madagascar',
+            value: 'Madagascar'
+        },{
+            id: "add_location",
+            title: 'seychelles',
+            value: 'Seychelles'
+        },{
+            id: "add_location",
+            title: 'mayotte',
+            value: 'Mayotte'
+        },{
+            id: "add_location",
+            title: 'rodrigues',
+            value: 'Rodrigues'
         }];
+        vm.radioData = [
+            { label: '1', value: 1 },
+            { label: '2', value: 2 },
+            { label: '3', value: '3', isDisabled: true },
+            { label: '4', value: '4' }
+        ];
         /*vm.labels = ["Maurice", "Reunion", "Seychelles", "Madagascar", "Rodrigues", "Mayotte"];
          vm.data =  [30.3, 19.1, 4.0, 3.8, 3.2, 39.6];*/
     }]);

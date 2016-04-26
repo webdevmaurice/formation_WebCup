@@ -21,4 +21,9 @@
     height: 128px; }
 .radioButtondemoBasicUsage .ipsum {
     color: saddlebrown;
-    font-size: 0.9em; }
+    font-size: 0.9em;
+}
+
+#map_img{
+    border: ridge 5px black;
+}
