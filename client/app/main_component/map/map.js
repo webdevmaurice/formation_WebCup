@@ -4,15 +4,11 @@
 angular
     .module('radioDemo1', ['ngMaterial'])
     .controller('AppCtrl', function($scope) {
-        $scope.data = {
-            group1 : 'Banana',
-            group2 : '2',
-            group3 : 'avatar-1'
-        };
+        $scope.selectedMap = 'comoros';
         $scope.avatarData = [{
             id: "avatars:svg-1",
-            title: 'avatar 1',
-            value: 'avatar-1'
+            title: 'COMORE',
+            value: 'comoros'
         },{
             id: "avatars:svg-2",
             title: 'avatar 2',
