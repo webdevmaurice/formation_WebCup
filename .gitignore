@@ -1,4 +1,6 @@
 .settings/com.aptana.editor.php.prefs
 .project
 .idea
+/.idea/encodings.xml
+/.idea/sonarIssues.xml
 .idea/
