@@ -11,11 +11,14 @@
 
 /* Kukuri */
 .link--kukuri {
-	text-transform: uppercase;
-	font-weight: 900;
-	overflow: hidden;
+	color: #47a3da;
+	font-weight: lighter;
+	letter-spacing: 50px;
 	line-height: 0.75;
-	color: #c5c2b8;
+	opacity: 0.7;
+	overflow: hidden;
+	padding: 2%;
+	text-transform: uppercase;
 }
 
 .link--kukuri:hover {

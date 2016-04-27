@@ -17,12 +17,12 @@ angular.module('teleportation')
         });
 
         setInterval(function(){
-            $('a.link--manko').trigger('mouseover');
-        }, 3000);
+            $('.link--kukuri').toggleClass('link--kukuri::after');
+        }, 2000);
 
         $(document).ready(function () {
             //rotation speed and timer
-            var speed = 5000;
+            var speed = 8000;
 
             var run = setInterval(rotate, speed);
             var slides = $('.slide');
