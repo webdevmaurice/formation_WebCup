@@ -48,7 +48,7 @@ module.exports = function(grunt) {
                 ],
                 dest: 'dist/client/lib/weblibs.min.css'
             },
-            userstyles: {
+            usercss: {
                 src: 'src/client/assets/css/*.css',
                 dest: 'dist/client/assets/userstyles.min.css'
             },
@@ -61,6 +61,20 @@ module.exports = function(grunt) {
                     'src/client/app/shared_component/**/*Ctrl.js',
                 ],
                 dest: 'dist/client/app/app.js'
+            },
+            appcss:{
+                src:[
+                    'src/client/app/shared_component/nav/nav.css',
+                    'src/client/app/main_component/page_acceuil/css/page_accueil.css',
+                    'src/client/app/main_component/voyage/css/component2.css',
+                    'src/client/app/main_component/voyage/css/voyage.css',
+                    'src/client/app/main_component/voyage/css/reset.css',
+                    'src/client/app/main_component/voyage/css/voyage_style.css',
+                    'src/client/app/main_component/map/map.css',
+                    'src/client/app/main_component/about/about.css',
+                ],
+                dest: 'dist/client/app/app.css'
+
             }
         },
         copy: {
