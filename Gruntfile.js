@@ -101,6 +101,6 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('compile', ['concat'] );
+    grunt.registerTask('build', ['copy','concat'] );
 
 };
