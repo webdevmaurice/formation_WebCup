@@ -69,7 +69,7 @@ module.exports = function(grunt) {
                     'src/client/app/main_component/voyage/css/component2.css',
                     'src/client/app/main_component/voyage/css/voyage.css',
                     'src/client/app/main_component/voyage/css/reset.css',
-                    'src/client/app/main_component/voyage/css/voyage_style.css',
+                    /*'src/client/app/main_component/voyage/css/voyage_style.css',*/
                     'src/client/app/main_component/map/map.css',
                     'src/client/app/main_component/about/about.css',
                 ],
