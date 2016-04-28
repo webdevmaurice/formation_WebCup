@@ -1,0 +1,20 @@
+<div id="splitlayout" class="splitlayout" >
+    <div class="intro">
+        <div class="side side-left" ng-click="vg.fnLeft()" ng-class="{'open-right' : vg.leftToRight==0, 'close-right' : vg.leftToRight==1}" >
+            <div class="intro-content" >
+                <div class="profile"></div>
+                <h1><span>Human Transfer </span><span>Guidelines</span></h1>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="side side-right" ng-click="vg.fnLeft()" ng-class="{'open-left':vg.leftToRight==0, 'back-right':vg.leftToRight==1}">
+            <div class="intro-content">
+                <div class="profile"></div>
+                <h1><span>Parcels Transfer </span><span>Guidelines</span></h1>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </div><!-- /intro -->
+    <a href="#" class="back back-right" title="back to intro">&rarr;</a>
+    <a href="#" class="back back-left" title="back to intro">&larr;</a>
+</div>

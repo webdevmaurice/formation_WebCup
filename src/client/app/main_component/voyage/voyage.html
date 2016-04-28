@@ -1,0 +1,69 @@
+<div id="divVoyage">
+    <h2 class="ss-subtitle">Human Transfer Guidelines </h2>
+    <!--div id="ss-links" class="ss-links">
+        <a scroll-to-item scroll-to="#summary">Brief</a>
+        <a scroll-to-item scroll-to="#process">Process</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#safety">Safety</a>
+        <a href="#payment">Payment</a>
+        <a href="#test">test</a>
+    </div-->
+    <div id="ss-container" class="ss-container">
+        <div class="ss-row">
+            <div class="ss-left"><h1>Brief</h1></div>
+            <div class="ss-right"><h1>Description</h1></div>
+        </div>
+        <div class="ss-row {{line.class}}" ng-repeat="line in vm.arrayData.brief">
+            <div ng-if="$index%2 == 0">
+                <div class="ss-left">{{line.title_img}}
+                    <a href="#" class="ss-circle {{line.b_img_class}}"></a>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>{{line.title_descript}}</span>
+                        <a href="#">{{line.descrip}}</a>
+                    </h3>
+                </div>
+            </div>
+            <div ng-if="$index%2 == 1">
+                <div class="ss-left">
+                    <h3>
+                        <span>{{line.title_descript}}</span>
+                        <a href="#">{{line.descrip}}</a>
+                    </h3>
+                </div>
+                <div class="ss-right">{{line.title_img}}
+                    <a href="#" class="ss-circle {{line.b_img_class}}"></a>
+                </div>
+            </div>
+        </div>
+        <div class="ss-row">
+            <div class="ss-left"><h1>Mode of </h1></div>
+            <div class="ss-right"><h1>Operation</h1></div>
+        </div>
+        <div class="ss-row {{line.class}}" ng-repeat="line in vm.arrayData.operation">
+            <div ng-if="$index%2 == 0">
+                <div class="ss-left">{{line.title_img}}
+                    <a href="#" class="ss-circle {{line.b_img_class}}"></a>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>{{line.title_descript}}</span>
+                        <a href="#">{{line.descrip}}</a>
+                    </h3>
+                </div>
+            </div>
+            <div ng-if="$index%2 == 1">
+                <div class="ss-left">
+                    <h3>
+                        <span>{{line.title_descript}}</span>
+                        <a href="#">{{line.descrip}}</a>
+                    </h3>
+                </div>
+                <div class="ss-right">{{line.title_img}}
+                    <a href="#" class="ss-circle {{line.b_img_class}}"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+.contact-form {
+    margin-top:70px;
+}
+
+.large_input{
+    width: 360px !important;
+}
+
+.question{
+    color: #47a3da;
+    padding-bottom: 10px;
+    font-size: 22px !important;
+    font-family: "Roboto", sans-serif;
+}
+
+.image_about{
+    width: 50%;
+    height: 250px;
+}
+
+
+.ctext{
+    width: 50%;
+}

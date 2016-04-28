@@ -1,0 +1,33 @@
+<div class="page divEvent">
+    <div id="ss-container" class="ss-container">
+        <div class="ss-row">
+            <div class="ss-left"><h1>Spéciale </h1></div>
+            <div class="ss-right"><h1>vacances</h1></div>
+        </div>
+        <div class="ss-row {{line.class}}" ng-repeat="line in vm.arrayData.offre">
+            <div ng-if="$index%2 == 0">
+                <div class="ss-left">{{line.title_img}}
+                    <a href="#" class="ss-circle {{line.b_img_class}}"></a>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>{{line.title_descript}}</span>
+                        <a href="#">{{line.descrip}}</a>
+                    </h3>
+                </div>
+            </div>
+            <div ng-if="$index%2 == 1">
+                <div class="ss-left">
+                    <h3>
+                        <span>{{line.title_descript}}</span>
+                        <a href="#">{{line.descrip}}</a>
+                    </h3>
+                </div>
+                <div class="ss-right">{{line.title_img}}
+                    <a href="#" class="ss-circle {{line.b_img_class}}"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
