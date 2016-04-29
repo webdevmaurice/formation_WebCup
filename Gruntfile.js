@@ -113,6 +113,18 @@ module.exports = function(grunt) {
                 cwd: 'src/client/app/',
                 src:['**'],
                 dest: 'dist/client/app/'
+            },
+            img:{
+                expand: true,
+                cwd: 'src/client/assets/img/',
+                src:['**'],
+                dest: 'dist/client/assets/img/'
+            },
+            lang:{
+                expand: true,
+                cwd: 'src/client/assets/lang/',
+                src:['**'],
+                dest: 'dist/client/assets/lang/'
             }
         }
     });
