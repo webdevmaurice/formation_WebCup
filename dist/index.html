@@ -2,30 +2,143 @@
 <html lang="en" ng-app="teleportation">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="client/lib/weblibs.min.js"></script>
     <link rel="stylesheet" type="text/css" href="client/lib/weblibs.min.css"/>
-    <!-- Local styles -->
     <link rel="stylesheet" type="text/css" href="client/assets/userstyles.min.css"/>
-    <!-- Angular application -->
-    <script type="text/javascript" src="client/app/app.js"></script>
     <link rel="stylesheet" type="text/css" href="client/app/app.css" />
-    <!-- Voyage-->
     <link rel="stylesheet" type="text/css" href="client/app/main_component/voyage/css/voyage_style.css" />
     <!--[if lt IE 9]>
     <link rel="stylesheet" type="text/css" href="client/app/main_component/voyage/css/voyage_cssIE.css" />
     <![endif]-->
-    <!-- modernizr-->
-    <script type="text/javascript" src="client/app/main_component/voyage/lib/modernizr.custom.11333.js"></script>
-    <!--jquery ease-->
-    <script type="text/javascript" src="client/app/main_component/voyage/lib/jquery.easing.1.3.js"></script>
 </head>
 
 <body style="overflow: hidden;">
-    <ng-include src="'client/app/shared_component/nav/nav.html'"></ng-include>
+    <nav id="bt-menu"
+         class="bt-menu"
+         ng-class="nav.menuIcon == 'menu' ? 'bt-menu-close' : 'bt-menu-open'"
+         ng-controller="navCtrl as nav"
+         ng-click="nav.closeMenu($event)">
+        <md-button
+                aria-label
+                class="bt-menu-trigger"
+                ng-click="nav.toggleMenu($event)">
+            <ng-md-icon
+                    icon="{{nav.menuIcon}}"
+                    options='{"duration": 500, "rotation": "none"}'>
+            </ng-md-icon>
+        </md-button>
+        <ul>
+            <li>
+                <md-button
+                        ng-href="#/page_acceuil">
+                    <md-icon
+                            class="md-light md-48">
+                        dashboard
+                    </md-icon>
+                    <md-tooltip
+                            md-direction="right"
+                            md-delay="144">
+                        Acceuil
+                    </md-tooltip>
+                </md-button>
+            </li>
+            <li>
+                <md-button
+                        ng-href="#/my_account">
+                    <md-icon
+                            class="md-light md-48">
+                        account_box
+                    </md-icon>
+                    <md-tooltip
+                            md-direction="right"
+                            md-delay="144">
+                        Mon compte
+                    </md-tooltip>
+                </md-button>
+            </li>
+            <li>
+                <md-button
+                        ng-href="#/voyage">
+                    <md-icon
+                            class="md-light md-48">
+                        card_travel
+                    </md-icon>
+                    <md-tooltip
+                            md-direction="right"
+                            md-delay="144">
+                        Info techniques
+                    </md-tooltip>
+                </md-button>
+            </li>
+            <li>
+                <md-button
+                        ng-href="#/map">
+                    <md-icon
+                            class="md-light md-48">
+                        public
+                    </md-icon>
+                    <md-tooltip
+                            md-direction="right"
+                            md-delay="144">
+                        Carte
+                    </md-tooltip>
+                </md-button>
+            </li>
+            <li>
+                <md-button
+                        ng-href="#/about">
+                    <md-icon
+                            class="md-light md-48">
+                        info
+                    </md-icon>
+                    <md-tooltip
+                            md-direction="right"
+                            md-delay="144">
+                        Nous connaître
+                    </md-tooltip>
+                </md-button>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <md-button class="md-fab md-mini">
+                    <md-icon style="color:rgb(85,172,238)" md-font-set="mdi" md-font-icon="mdi-twitter"></md-icon>
+                </md-button>
+            </li>
+            <li>
+                <md-button class="md-fab md-mini">
+                    <md-icon style="color:rgb(58,87,149)" md-font-set="mdi" md-font-icon="mdi-facebook"></md-icon>
+                </md-button>
+            </li>
+        </ul>
+        <div  class="animation outer-box">
+            <div ng-view
+                 class="cube {{vm.pageClass}}">
+            </div>
+        </div>
+    </nav>
     <md-progress-circular
             md-mode="indeterminate"
             md-diameter="150"
             ng-show="isRouteLoading">
     </md-progress-circular>
+    <script type="text/javascript" src="client/lib/weblibs.min.js"></script>
+    <script type="text/javascript" src="client/app/app.js"></script>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '1590153047963070',
+                xfbml      : true,
+                version    : 'v2.6'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 </html>

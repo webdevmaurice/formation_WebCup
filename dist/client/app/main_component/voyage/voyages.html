@@ -23,7 +23,7 @@
             </div><!-- /intro -->
             <div id="divHuman" class="page page-left divVoyage" ng-show="vm.isHuman">
                 <h2 class="ss-subtitle">Guide de Transfer</h2>
-                <div style="text-align: left;">
+                <div class="menuScroll" style="text-align: left;position:absolute;">
                     <md-button ng-click="vm.fnScroll(1)" class="md-fab" aria-label="resume"><md-tooltip md-direction="top">Resumé</md-tooltip><md-icon class="md-36">lightbulb_outline</md-icon></md-button>
                     <md-button ng-click="vm.fnScroll(2)" class="md-fab" aria-label="resume"><md-tooltip md-direction="top">Fonctionnement</md-tooltip><md-icon class="md-36">build</md-icon></md-button>
                     <md-button ng-click="vm.fnScroll(3)" class="md-fab" aria-label="resume"><md-tooltip md-direction="top">Contribution</md-tooltip><md-icon class="md-36">supervisor_account</md-icon></md-button>
@@ -184,7 +184,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="back back-right" title="back to intro">&larr;</a>
+            <a href="#" class="back back-right" style="top:50%;" title="back to intro">&larr;</a>
             <a href="#" class="back back-left" title="back to intro">&rarr;</a>
         </div><!-- /splitlayout -->
     </div><!-- /container -->

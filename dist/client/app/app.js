@@ -801,9 +801,9 @@ angular.module('teleportation')
             fname: 'Hashim',
             lname: 'Mukoon',
             email: 'hash.im@pharmagst.mu',
-            gender: 'Male',
+            gender: 'Homme',
             address: '1600 Amphitheatre Pkwy',
-            country: 'Mauritius',
+            country: 'Maurice',
             submissionDate : '01/02/1990'
         };
 
@@ -814,9 +814,9 @@ angular.module('teleportation')
             // Use timeout to simulate a 650ms request.
             return $timeout(function() {
                 vm.paramGenders =  vm.paramSelectedGender  || [
-                    { id: 1, name: 'Male' },
-                    { id: 2, name: 'Female' },
-                    { id: 3, name: 'Others' }
+                    { id: 1, name: 'Homme' },
+                    { id: 2, name: 'Femme' },
+                    { id: 3, name: 'Autre' }
                 ];
             }, 650);
         };
@@ -828,7 +828,7 @@ angular.module('teleportation')
             // Use timeout to simulate a 650ms request.
             return $timeout(function() {
                 vm.paramCountries =  vm.paramSelectedCountry  || [
-                        { id: 1, name: 'Mauritius' },
+                        { id: 1, name: 'Maurice' },
                         { id: 2, name: 'Rodrigues' },
                         { id: 3, name: 'Reunion' },
                         { id: 4, name: 'Seychelles' },
@@ -847,28 +847,28 @@ angular.module('teleportation')
         ];*/
 
         vm.arrayOfStupidLines = [
-            "<pre>01/04/2016 at 07:56 Travel from: Madagascar to: Reunion with purpose: Business </pre>" +
-            "<pre>01/04/2016 at 07:56 Travel from: Madagascar to: Reunion with purpose: Business</pre>" +
-            "<pre>01/04/2016 at 12:37 Travel from: Reunion to: Seychelles with purpose: Lunch</pre>" +
-            "<pre>01/04/2016 at 13:21 Travel from: Seychelles to: Reunion with purpose: Business</pre>" +
-            "<pre>01/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home</pre>" +
-            "<pre>02/04/2016 at 07:50 Travel from: Madagascar to: Reunion with purpose: Business</pre>" +
-            "<pre>02/04/2016 at 12:32 Travel from: Reunion to: Rodrigues with purpose: Lunch</pre>" +
-            "<pre>02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business</pre>" +
-            "<pre>02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home</pre>" +
-            "<pre>03/04/2016 at 07:53 Travel from: Madagascar to: Reunion with purpose: Business</pre>" +
-            "<pre>03/04/2016 at 12:30 Travel from: Reunion to: Rodrigues with purpose: Lunch</pre>" +
-            "<pre>03/04/2016 at 13:22 Travel from: Rodrigues to: Reunion with purpose: Business</pre>" +
-            "<pre>03/04/2016 at 17:05 Travel from: Reunion to: Mauritius with purpose: Shopping</pre>" +
-            "<pre>03/04/2016 at 19:33 Travel from: Mauritius to: Madagascar with purpose: Home</pre>" +
-            "<pre>02/04/2016 at 07:50 Travel from: Madagascar to: Reunion with purpose: Business</pre>" +
-            "<pre>02/04/2016 at 12:32 Travel from: Reunion to: Rodrigues with purpose: Lunch</pre>" +
-            "<pre>02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business</pre>" +
-            "<pre>02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home</pre>" +
-            "<pre>02/04/2016 at 07:50 Travel from: Madagascar to: Reunion with purpose: Business</pre>" +
-            "<pre>02/04/2016 at 12:32 Travel from: Reunion to: Rodrigues with purpose: Lunch</pre>" +
-            "<pre>02/04/2016 at 13:28 Travel from: Rodrigues to: Reunion with purpose: Business</pre>" +
-            "<pre>02/04/2016 at 17:05 Travel from: Reunion to: Madagascar with purpose: Home</pre>"
+            "<pre>01/04/2016 à 07:56 voyager depuis: Madagascar jusqu'à: Réunion avec objectif: Business </pre>" +
+            "<pre>01/04/2016 à 07:56 voyager depuis: Madagascar jusqu'à: Réunion avec objectif: Business</pre>" +
+            "<pre>01/04/2016 à 12:37 voyager depuis: Réunion jusqu'à: Seychelles avec objectif: Déjeuner</pre>" +
+            "<pre>01/04/2016 à 13:21 voyager depuis: Seychelles jusqu'à: Réunion avec objectif: Business</pre>" +
+            "<pre>01/04/2016 à 17:05 voyager depuis: Réunion jusqu'à: Madagascar avec objectif: Maison</pre>" +
+            "<pre>02/04/2016 à 07:50 voyager depuis: Madagascar jusqu'à: Réunion avec objectif: Business</pre>" +
+            "<pre>02/04/2016 à 12:32 voyager depuis: Réunion jusqu'à: Rodrigues avec objectif: Déjeuner</pre>" +
+            "<pre>02/04/2016 à 13:28 voyager depuis: Rodrigues jusqu'à: Réunion avec objectif: Business</pre>" +
+            "<pre>02/04/2016 à 17:05 voyager depuis: Réunion jusqu'à: Madagascar avec objectif: Maison</pre>" +
+            "<pre>03/04/2016 à 07:53 voyager depuis: Madagascar jusqu'à: Réunion avec objectif: Business</pre>" +
+            "<pre>03/04/2016 à 12:30 voyager depuis: Réunion jusqu'à: Rodrigues avec objectif: Déjeuner</pre>" +
+            "<pre>03/04/2016 à 13:22 voyager depuis: Rodrigues jusqu'à: Réunion avec objectif: Business</pre>" +
+            "<pre>03/04/2016 à 17:05 voyager depuis: Réunion jusqu'à: Mauritius avec objectif: Shopping</pre>" +
+            "<pre>03/04/2016 à 19:33 voyager depuis: Mauritius jusqu'à: Madagascar avec objectif: Maison</pre>" +
+            "<pre>02/04/2016 à 07:50 voyager depuis: Madagascar jusqu'à: Réunion avec objectif: Business</pre>" +
+            "<pre>02/04/2016 à 12:32 voyager depuis: Réunion jusqu'à: Rodrigues avec objectif: Déjeuner</pre>" +
+            "<pre>02/04/2016 à 13:28 voyager depuis: Rodrigues jusqu'à: Réunion avec objectif: Business</pre>" +
+            "<pre>02/04/2016 à 17:05 voyager depuis: Réunion jusqu'à: Madagascar avec objectif: Maison</pre>" +
+            "<pre>02/04/2016 à 07:50 voyager depuis: Madagascar jusqu'à: Réunion avec objectif: Business</pre>" +
+            "<pre>02/04/2016 à 12:32 voyager depuis: Réunion jusqu'à: Rodrigues avec objectif: Déjeuner</pre>" +
+            "<pre>02/04/2016 à 13:28 voyager depuis: Rodrigues jusqu'à: Réunion avec objectif: Business</pre>" +
+            "<pre>02/04/2016 à 17:05 voyager depuis: Réunion jusqu'à: Madagascar avec objectif: Maison</pre>"
         ];
         
         vm.startType = false;
@@ -1140,6 +1140,10 @@ angular.module('teleportation')
                         'scroll.Scrolling' : function( event ) {
                             // set a timeout to avoid that the
                             // placeRows function gets called on every scroll trigger
+                            console.log('RTEST');
+                            $('.menuScroll').animate({top:$(this).scrollTop()+50},10,"linear");
+                            $('.side').animate({top:$(this).scrollTop()},0,"linear");
+                            $('.back').animate({top:$(this).scrollTop()+($(window).height()/2)},0,"linear");
                             if( anim ) return false;
                             anim = true;
                             setTimeout( function() {
@@ -1425,6 +1429,8 @@ angular.module('teleportation')
                     vm.isHuman = true;
                     vm.isParcel=false;
                     vm.fnHuman();
+                    console.log('selected left');
+                    $('.intro-content').css({opacity:0});
                     reset();
                     classie.add( splitlayout, 'open-left' );
                 } );
@@ -1451,6 +1457,7 @@ angular.module('teleportation')
                             page = dir === 'right' ? pageRight : pageLeft;
                         classie.remove( splitlayout, 'open-' + dir );
                         classie.add( splitlayout, 'close-' + dir );
+                        $('.intro-content').css({opacity:1});
                         page.addEventListener( transEndEventName, onEndTransFn );
                     };
 

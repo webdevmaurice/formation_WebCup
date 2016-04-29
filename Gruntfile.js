@@ -14,6 +14,8 @@ module.exports = function(grunt) {
             jslibfiles: {
                 src: [
                     'src/client/lib/jquery/jquery-1.12.3.min.js',
+                    'src/client/lib/modernizr.custom.11333.js',
+                    'src/client/lib/jquery.easing.1.3.js',
                     'src/client/lib/lodash/lodash.min.js',
                     'src/client/lib/angular/angular.min.js',
                     'src/client/lib/angular-animate/angular-animate.min.js',
