@@ -171,6 +171,10 @@ angular.module('teleportation')
                         'scroll.Scrolling' : function( event ) {
                             // set a timeout to avoid that the
                             // placeRows function gets called on every scroll trigger
+                            console.log('RTEST');
+                            $('.menuScroll').animate({top:$(this).scrollTop()+50},10,"linear");
+                            $('.side').animate({top:$(this).scrollTop()},0,"linear");
+                            $('.back').animate({top:$(this).scrollTop()+($(window).height()/2)},0,"linear");
                             if( anim ) return false;
                             anim = true;
                             setTimeout( function() {
@@ -456,6 +460,8 @@ angular.module('teleportation')
                     vm.isHuman = true;
                     vm.isParcel=false;
                     vm.fnHuman();
+                    console.log('selected left');
+                    $('.intro-content').css({opacity:0});
                     reset();
                     classie.add( splitlayout, 'open-left' );
                 } );
@@ -482,6 +488,7 @@ angular.module('teleportation')
                             page = dir === 'right' ? pageRight : pageLeft;
                         classie.remove( splitlayout, 'open-' + dir );
                         classie.add( splitlayout, 'close-' + dir );
+                        $('.intro-content').css({opacity:1});
                         page.addEventListener( transEndEventName, onEndTransFn );
                     };
 
