@@ -350,11 +350,3 @@ h2.ss-subtitle:after{
     float: left;
 }
 
-h5{
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: underline;
-    font-family: "Roboto", sans-serif;
-    color: #067BC2;
-}
-
