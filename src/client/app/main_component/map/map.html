@@ -1,0 +1,40 @@
+<br>
+
+    <md-card-title style="margin-left: 10px;">
+        <md-card-title-text>
+            <span class="md-headline">Pays choisis: </span>
+            <span class="md-subhead">{{ vm.selectedMap }}</span>
+        </md-card-title-text>
+        <br>
+        <br>
+        <br>&nbsp;&nbsp;&nbsp;
+        <md-card-title-media>
+            <div class="md-media-lg card-media"></div>
+        </md-card-title-media>
+    </md-card-title>
+    <div style="display: inline-block; float: left; margin-left: 15px;">
+        <md-radio-group ng-model="vm.selectedMap">
+            <md-radio-button ng-repeat="it in vm.avatarData"
+                             ng-value="it.value"
+                             aria-label="client/assets/img/{{it.title}}_icon.png"   title="{{it.value}}">
+                <!--<md-icon class="md-light md-48">
+                    {{it.id}}
+                </md-icon>-->
+                <img src="client/assets/img/{{it.value}}_icon.png"  width="75px" height="50px">
+
+            </md-radio-button>
+        </md-radio-group>
+</div>
+        <div id='map_img' style="display: inline-block; float: left; margin-left: 15px;">
+            <img src="client/assets/img/comores_map.png" ng-show="vm.selectedMap=='Comores'" width="500px" height="500px">
+            <img src="client/assets/img/maurice_map.png" ng-show="vm.selectedMap=='Maurice'" width="500px" height="500px">
+            <img src="client/assets/img/reunion_map.png" ng-show="vm.selectedMap=='Reunion'" width="500px" height="500px">
+            <img src="client/assets/img/madagascar_map.png" ng-show="vm.selectedMap=='Madagascar'" width="500px" height="500px">
+            <img src="client/assets/img/seychelles_map.png" ng-show="vm.selectedMap=='Seychelles'" width="500px" height="500px">
+            <img src="client/assets/img/mayotte_map.png" ng-show="vm.selectedMap=='Mayotte'" width="500px" height="500px">
+            <img src="client/assets/img/rodrigues_map.png" ng-show="vm.selectedMap=='Rodrigues'" width="500px" height="500px">
+        </div>
+
+    </md-card-actions>
+</md-card>
+

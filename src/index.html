@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="teleportation">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- Jquery -->
+    <script type="text/javascript" src="client/lib/jquery/jquery-1.12.3.js"></script>
+
+    <!-- modernizr-->
+    <script type="text/javascript" src="client/lib/modernizr.custom.11333.js"></script>
+
+    <!--jquery ease-->
+    <script type="text/javascript" src="client/lib/jquery.easing.1.3.js"></script>
+    <!-- Lodash -->
+    <script type="text/javascript" src="client/lib/lodash/lodash.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- link rel="stylesheet" type="text/css" href="client/lib/bootstrap-3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="client/lib/bootstrap-3.3.6/css/bootstrap-theme.css"/>
+    <script type="text/javascript" src="client/lib/bootstrap-3.3.6/js/bootstrap.js"></script -->
+
+    <!-- Bootstrap Material Design -->
+    <!--link rel="stylesheet" type="text/css" href="lib/bootstrap-material-design/css/bootstrap-material-design.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-material-design/css/ripples.min.css"/>
+    <script type="text/javascript" src="lib/bootstrap-material-design/js/material.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-material-design/js/ripples.js"></script-->
+
+    <!-- Google's Material Design Icons -->
+    <link rel="stylesheet" type="text/css" href="client/lib/material-design-icons/iconfont/material-icons.css"/>
+
+    <!-- Templarian's Material Design Icons -->
+    <link rel="stylesheet" type="text/css" href="client/lib/mdi/materialdesignicons.css">
+    <!--link rel="stylesheet" type="text/css" href="client/lib/materialdesignicon.bootstrap.css"/-->
+
+    <!-- Angular -->
+    <script type="text/javascript" src="client/lib/angular/angular.js"></script>
+
+    <!-- Angular Animate-->
+    <script type="text/javascript" src="client/lib/angular-animate/angular-animate.js"></script>
+
+    <!-- Angular Aria-->
+    <script type="text/javascript" src="client/lib/angular-aria/angular-aria.js"></script>
+
+    <!-- Angular Messages-->
+    <script type="text/javascript" src="client/lib/angular-messages/angular-messages.js"></script>
+
+    <!-- Angular Route-->
+    <script type="text/javascript" src="client/lib/angular-route/angular-route.js"></script>
+
+    <!-- UI Router-->
+    <!--script type="text/javascript" src="client/lib/ui-router/release/angular-ui-router.js"></script-->
+
+    <!-- Angular Sanitize-->
+    <script type="text/javascript" src="client/lib/angular-sanitize/angular-sanitize.js"></script>
+
+    <!-- Angular Material-->
+    <script type="text/javascript" src="client/lib/angular-material/angular-material.js"></script>
+    <link rel="stylesheet" type="text/css" href="client/lib/angular-material/angular-material.css"/>
+
+    <!-- Angular Material Calendar-->
+    <script type="text/javascript" src="client/lib/angular-material-calendar/angular-material-calendar.js"></script>
+
+    <!-- Angular Material Icons-->
+    <script type="text/javascript" src="client/lib/angular-material-icons/angular-material-icons.js"></script>
+    <!--link rel="stylesheet" type="text/css" href="client/lib/angular-material-icons/angular-material-icons.css"/-->
+
+    <!-- Angular Translate-->
+    <script type="text/javascript" src="client/lib/angular-translate/dist/angular-translate.js"></script>
+
+    <!-- Angular Chart -->
+    <script type="text/javascript" src="client/lib/chart.js/Chart.js"></script>
+    <script type="text/javascript" src="client/lib/angular-chart.js/dist/angular-chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="client/lib/angular-chart.js/dist/angular-chart.css"/>
+
+    <!-- Angular Typewrite -->
+    <script type="text/javascript" src="client/lib/angular-typewrite/dist/angular-typewrite.js"></script>
+    <link rel="stylesheet" type="text/css" href="client/lib/angular-typewrite/dist/angular-typewrite.css"/>
+
+    <!-- angular-simple-logger -->
+    <script type="text/javascript" src="client/lib/angular-simple-logger/dist/angular-simple-logger.js"></script>
+
+    <!-- Angular Google Maps -->
+    <script type="text/javascript" src="client/lib/angular-google-maps/dist/angular-google-maps.js"></script>
+
+    <!-- VEGAS SLIDER -->
+    <script type="text/javascript" src="client/lib/vegas/vegas.min.js"></script>
+    <script type="text/javascript" src="client/lib/vegas/vegas.js"></script>
+    <link rel="stylesheet" type="text/css" href="client/lib/vegas/vegas.css"/>
+
+    <!-- SVG Morpheus -->
+    <script type="text/javascript" src="client/lib/SVG-Morpheus/compile/unminified/svg-morpheus.js"></script>
+
+    <!-- Local styles -->
+    <link rel="stylesheet" type="text/css" href="client/assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="client/assets/css/page_cube_transitions.css"/>
+
+    <!-- Angular application module -->
+    <script type="text/javascript" src="client/app/app.module.js"></script>
+
+    <!-- Angular application routing -->
+    <script type="text/javascript" src="client/app/app.routes.js"></script>
+
+    <!-- Directives -->
+    <script type="text/javascript" src="client/app/common/directives/scrollToItem.js"></script>
+    <script type="text/javascript" src="client/app/common/directives/bindToHeight.js"></script>
+
+    <!-- Navigation -->
+    <link rel="stylesheet" type="text/css" href="client/app/shared_component/nav/nav.css"/>
+    <script type="text/javascript" src="client/app/shared_component/nav/navCtrl.js"></script>
+
+    <!-- Page Acceuil -->
+    <script type="text/javascript" src="client/app/main_component/page_acceuil/PageAccueilCtrl.js"></script>
+    <link rel="stylesheet" type="text/css" href="client/app/main_component/page_acceuil/css/page_accueil.css" />
+    <link rel="stylesheet" type="text/css" href="client/lib/textanimation/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="client/lib/textanimation/linkstyles.css" />
+
+    <!-- My Account -->
+    <script type="text/javascript" src="client/app/main_component/my_account/MyAccountCtrl.js"></script>
+    <!-- script type="text/javascript" src="client/app/main_component/my_account/statistique/statistique.js"></script -->
+
+    <!-- Voyage-->
+    <script type="text/javascript" src="client/app/main_component/voyage/VoyageCtrl.js"></script>
+    <link  rel="stylesheet" type="text/css" href="client/app/main_component/voyage/css/component2.css" />
+    <link rel="stylesheet" type="text/css" href="client/app/main_component/voyage/css/voyage.css" />
+    <link rel="stylesheet" type="text/css" href="client/app/main_component/voyage/css/voyage_style.css" />
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="client/app/main_component/voyage/css/voyage_cssIE.css" />
+    <![endif]-->
+
+    <!-- MAP -->
+    <script type="text/javascript" src="client/app/main_component/map/MapCtrl.js"></script>
+    <link  rel="stylesheet" type="text/css" href="client/app/main_component/map/map.css" />
+
+    <!-- About -->
+    <script type="text/javascript" src="client/app/main_component/about/aboutCtrl.js"></script>
+    <link  rel="stylesheet" type="text/css" href="client/app/main_component/about/about.css" />
+</head>
+
+<body style="overflow: hidden;">
+    <nav id="bt-menu"
+         class="bt-menu"
+         ng-class="nav.menuIcon == 'menu' ? 'bt-menu-close' : 'bt-menu-open'"
+         ng-controller="navCtrl as nav"
+         ng-click="nav.closeMenu($event)">
+        <md-button
+                aria-label
+                class="bt-menu-trigger"
+                ng-click="nav.toggleMenu($event)">
+            <ng-md-icon
+                    icon="{{nav.menuIcon}}"
+                    options='{"duration": 500, "rotation": "none"}'>
+            </ng-md-icon>
+        </md-button>
+        <ul>
+            <li>
+                <md-button
+                        ng-href="#/page_acceuil">
+                    <md-icon
+                            class="md-light md-48">
+                        dashboard
+                    </md-icon>
+                    <md-tooltip
+                            md-direction="right"
+                            md-delay="144">
+                        Acceuil
+                    </md-tooltip>
+                </md-button>
+            </li>
+            <li>
+                <md-button
+                        ng-href="#/my_account">
+                    <md-icon
+                            class="md-light md-48">
+                        account_box
+                    </md-icon>
+                    <md-tooltip
+                            md-direction="right"
+                            md-delay="144">
+                        Mon compte
+                    </md-tooltip>
+                </md-button>
+            </li>
+            <li>
+                <md-button
+                        ng-href="#/voyage">
+                    <md-icon
+                            class="md-light md-48">
+                        card_travel
+                    </md-icon>
+                    <md-tooltip
+                            md-direction="right"
+                            md-delay="144">
+                        Info techniques
+                    </md-tooltip>
+                </md-button>
+            </li>
+            <li>
+                <md-button
+                        ng-href="#/map">
+                    <md-icon
+                            class="md-light md-48">
+                        public
+                    </md-icon>
+                    <md-tooltip
+                            md-direction="right"
+                            md-delay="144">
+                        Carte
+                    </md-tooltip>
+                </md-button>
+            </li>
+            <li>
+                <md-button
+                        ng-href="#/about">
+                    <md-icon
+                            class="md-light md-48">
+                        info
+                    </md-icon>
+                    <md-tooltip
+                            md-direction="right"
+                            md-delay="144">
+                        Nous connaître
+                    </md-tooltip>
+                </md-button>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <md-button class="md-fab md-mini">
+                    <md-icon style="color:rgb(85,172,238)" md-font-set="mdi" md-font-icon="mdi-twitter"></md-icon>
+                </md-button>
+            </li>
+            <li>
+                <md-button class="md-fab md-mini">
+                    <md-icon style="color:rgb(58,87,149)" md-font-set="mdi" md-font-icon="mdi-facebook"></md-icon>
+                </md-button>
+            </li>
+        </ul>
+        <div  class="animation outer-box">
+            <div ng-view
+                 class="cube {{vm.pageClass}}">
+            </div>
+        </div>
+    </nav>
+    <md-progress-circular
+            md-mode="indeterminate"
+            md-diameter="150"
+            ng-show="isRouteLoading">
+    </md-progress-circular>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '1590153047963070',
+                xfbml      : true,
+                version    : 'v2.6'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+</html>
