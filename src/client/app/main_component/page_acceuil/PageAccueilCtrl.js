@@ -20,7 +20,7 @@ angular.module('teleportation')
         header_display.flapper({
             width: 7,
             format: null,
-            align: 'right',
+            align: 'center',
             padding: ' ',
             chars: null,
             chars_preset: 'alpha',
@@ -33,19 +33,16 @@ angular.module('teleportation')
         });
 
         setTimeout(function(){
-            header_display.val('FASTLAP').change();
             var toggle=true;
             setInterval(function(){
                 if(toggle){
                     header_display.val('FASTLAP').change();
                 }else{
-                    header_display.val('').change();
+                    header_display.val('FASTLAP').change();
                 }
                 toggle=!toggle;
-                $(".front .top").show();
-            },5000);
-
-        },1000);
+            },3000);
+        },2000);
 
         $(".front .top").show();
 
