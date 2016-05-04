@@ -16,77 +16,49 @@ angular.module('teleportation')
             transitionDuration: 25000
         });
 
-        setInterval(function(){
-            $('.link--kukuri').toggleClass('link--kukuri::after');
-        }, 2000);
-
-        $(document).ready(function () {
-            //rotation speed and timer
-            var speed = 8000;
-
-            var run = setInterval(rotate, speed);
-            var slides = $('.slide');
-            var container = $('#slides ul');
-            var elm = container.find(':first-child').prop("tagName");
-            var item_width = container.width();
-            var previous = 'prev'; //id of previous button
-            var next = 'next'; //id of next button
-            slides.width(item_width); //set the slides to the correct pixel width
-            container.parent().width(item_width);
-            container.width(slides.length * item_width); //set the slides container to the correct total width
-            container.find(elm + ':first').before(container.find(elm + ':last'));
-            resetSlides();
-
-
-            //if user clicked on prev button
-
-            $('#buttons a').click(function (e) {
-                //slide the item
-
-                if (container.is(':animated')) {
-                    return false;
-                }
-                if (e.target.id == previous) {
-                    container.stop().animate({
-                        'left': 0
-                    }, 1500, function () {
-                        container.find(elm + ':first').before(container.find(elm + ':last'));
-                        resetSlides();
-                    });
-                }
-
-                if (e.target.id == next) {
-                    container.stop().animate({
-                        'left': item_width * -2
-                    }, 1500, function () {
-                        container.find(elm + ':last').after(container.find(elm + ':first'));
-                        resetSlides();
-                    });
-                }
-
-                //cancel the link behavior
-                return false;
-
-            });
-
-            //if mouse hover, pause the auto rotation, otherwise rotate it
-            container.parent().mouseenter(function () {
-                clearInterval(run);
-            }).mouseleave(function () {
-                run = setInterval(rotate, speed);
-            });
-
-
-            function resetSlides() {
-                //and adjust the container so current is in the frame
-                container.css({
-                    'left': -1 * item_width
-                });
-            }
-
+        var header_display=$('#header_display');
+        header_display.flapper({
+            width: 7,
+            format: null,
+            align: 'right',
+            padding: ' ',
+            chars: null,
+            chars_preset: 'alpha',
+            timing: 250,
+            min_timing: 10,
+            threshhold: 100,
+            transform: true,
+            on_anim_start: null,
+            on_anim_end: null
         });
 
-        function rotate() {
-            $('#next').click();
-        }
+        setTimeout(function(){
+            header_display.val('FASTLAP').change();
+            var toggle=true;
+            setInterval(function(){
+                if(toggle){
+                    header_display.val('FASTLAP').change();
+                }else{
+                    header_display.val('').change();
+                }
+                toggle=!toggle;
+                $(".front .top").show();
+            },5000);
+
+        },1000);
+
+        $(".front .top").show();
+
+        $(".fastlap").Morphext({
+            // The [in] animation type. Refer to Animate.css for a list of available animations.
+            animation: "bounceIn",
+            // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+            separator: ",",
+            // The delay between the changing of each phrase in milliseconds.
+            speed: 2000,
+            complete: function () {
+                // Called after the entrance animation is executed.
+            }
+        });
+
     }]);
