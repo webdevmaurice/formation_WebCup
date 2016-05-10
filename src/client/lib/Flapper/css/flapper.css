@@ -249,13 +249,7 @@
     line-height: inherit;
 }
 
-.flapper.XS .digit .top {
-    clip: rect(0px, 24px, 14px, 0px);
-}
 
-.flapper.XS .digit .bottom {
-    clip: rect(15px, 24px, 30px, 0px); 
-}
 
 /* THEME STYLES */
 

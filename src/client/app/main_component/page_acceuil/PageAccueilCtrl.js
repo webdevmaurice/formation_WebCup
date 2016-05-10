@@ -16,35 +16,6 @@ angular.module('teleportation')
             transitionDuration: 25000
         });
 
-        var header_display=$('#header_display');
-        header_display.flapper({
-            width: 7,
-            format: null,
-            align: 'center',
-            padding: ' ',
-            chars: null,
-            chars_preset: 'alpha',
-            timing: 250,
-            min_timing: 10,
-            threshhold: 100,
-            transform: true,
-            on_anim_start: null,
-            on_anim_end: null
-        });
-
-        setTimeout(function(){
-            var toggle=true;
-            setInterval(function(){
-                if(toggle){
-                    header_display.val('FASTLAP').change();
-                }else{
-                    header_display.val('FASTLAP').change();
-                }
-                toggle=!toggle;
-            },3000);
-        },2000);
-
-        $(".front .top").show();
 
         $(".fastlap").Morphext({
             // The [in] animation type. Refer to Animate.css for a list of available animations.
